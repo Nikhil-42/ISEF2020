@@ -14,4 +14,4 @@ model.add(Dense(units=10, activation='softmax'))
 
 model.compile(loss='categorical_crossentropy', optimizer='sgd',metrics=['accuracy'])
 
-view = ViewImages("datasets/train-images-idx3-ubyte/train-images.idx3-ubyte")
+view = ViewImages(images_filename="datasets/train-images-idx3-ubyte/train-images.idx3-ubyte")

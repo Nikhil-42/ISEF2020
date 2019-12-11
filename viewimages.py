@@ -4,16 +4,30 @@ import struct
 
 class ViewImages:
 
-    def __init__(self, images_filename: str, images=[], image_height=0, image_width=0, image_count=0):
-        self.images_file = open(images_filename, 'rb')
-            
-        self.magic_number = struct.unpack(">i", self.images_file.read(4))[0]
-        self.image_count = struct.unpack(">i", self.images_file.read(4))[0]
-        self.image_height = struct.unpack(">i", self.images_file.read(4))[0]
-        self.image_width = struct.unpack(">i", self.images_file.read(4))[0]
+    def __init__(self, images_filename="", images=[], image_height=0, image_width=0):
+
+        if not images_filename == "":
+            self.images_file = open(images_filename, 'rb')
+                
+            self.magic_number = struct.unpack(">i", self.images_file.read(4))[0]
+            self.image_count = struct.unpack(">i", self.images_file.read(4))[0]
+            self.image_height = struct.unpack(">i", self.images_file.read(4))[0]
+            self.image_width = struct.unpack(">i", self.images_file.read(4))[0]
+
+            self.images = []
+        else:
+            self.images = images
+
+            self.image_count = len(images)
+            self.image_height = image_height
+            self.image_width = image_width
+
+            def nothing():
+                pass
+
+            self.get_data = nothing
 
         self.current_image = 0
-        self.images = []
 
         top = tk.Tk()
         top.geometry('400x400')
@@ -28,7 +42,6 @@ class ViewImages:
         next_button.pack(side='bottom', fill='x', expand='yes')
 
         self.images.append(self.get_data())
-        print(self.images)
         self.draw_data()
 
         top.mainloop()
