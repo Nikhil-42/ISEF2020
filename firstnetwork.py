@@ -28,14 +28,16 @@ test_images = mnist_io.images_from_file("datasets/t10k-images-idx3-ubyte/t10k-im
 
 test_labels = mnist_io.labels_from_file("datasets/t10k-labels-idx1-ubyte/t10k-labels.idx1-ubyte")
 
-view = ViewData(test_images, test_labels)
+# view = ViewData(test_images, test_labels)
 
 test_images = test_images.reshape(10000, 784).astype('float32')
 test_images /= 255
 
 history = model.fit(train_images, train_labels, validation_data=(test_images, test_labels))
 
+""" 
 output = model.predict(test_images[:10])
 for case in output:
     m=max(case)
     print([i for i, j in enumerate(case) if j == m])
+"""
