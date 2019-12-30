@@ -22,16 +22,15 @@ train_images = mnist_io.images_from_file("datasets/train-images-idx3-ubyte/train
 train_images = train_images.reshape(60000, 784).astype('float32')
 train_images /= 255
 
-train_labels = mnist_io.labels_from_file("datasets/train-labels-idx1-ubyte/train-labels.idx1-ubyte")
+train_labels = keras.utils.to_categorical(mnist_io.labels_from_file("datasets/train-labels-idx1-ubyte/train-labels.idx1-ubyte"), 10)
 
 test_images = mnist_io.images_from_file("datasets/t10k-images-idx3-ubyte/t10k-images.idx3-ubyte")
-
-test_labels = mnist_io.labels_from_file("datasets/t10k-labels-idx1-ubyte/t10k-labels.idx1-ubyte")
-
-# view = ViewData(test_images, test_labels)
-
 test_images = test_images.reshape(10000, 784).astype('float32')
 test_images /= 255
+
+test_labels = keras.utils.to_categorical(mnist_io.labels_from_file("datasets/t10k-labels-idx1-ubyte/t10k-labels.idx1-ubyte"), 10)
+
+# view = ViewData(test_images, test_labels)
 
 history = model.fit(train_images, train_labels, validation_data=(test_images, test_labels))
 

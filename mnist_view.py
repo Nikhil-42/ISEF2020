@@ -7,17 +7,7 @@ class ViewData:
     def __init__(self, images, labels):
 
         self.images = images
-        self.labels = []
-
-        for label in labels:
-            num = 0
-            for val in label:
-                if val == 1:
-                    break
-                else:
-                    num = num + 1
-            self.labels.append(num)
-
+        self.labels = labels
 
         self.image_count = images.shape[0]
         self.image_height = images.shape[1]
@@ -49,6 +39,7 @@ class ViewData:
         self.label.configure(text="%s" % self.labels[self.current])
         for y, row in enumerate(self.images[self.current]):
             for x, value in enumerate(row):
+                value = int(round(value*255))
                 self.canvas.create_rectangle(x*10, y*10, (x+1)*10, (y+1)*10, fill="#%02x%02x%02x" % (value, value, value))
 
     def next_button_command(self):
