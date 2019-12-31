@@ -1,4 +1,4 @@
-import neuralnetwork.network as net
+import network as net
 import mnist_io
 import mnist_view
 
