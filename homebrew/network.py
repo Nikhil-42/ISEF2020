@@ -1,42 +1,47 @@
 import math
-from decimal import Decimal
 import random
 import numpy as np
+import timeit
 
 # Activation Functions and Derivatives
 
-a = Decimal(0.01)
-D_one = Decimal(1)
-D_zero = Decimal(0)
+a = 0.01
 
 random.seed(12)
 
 def relu(x):
-    return x if x > 0 else D_zero
+    return x if x > 0 else 0
 
 def d_relu(x):
-    return D_one if x >= 0 else D_zero
+    return 1 if x >= 0 else 0
 
 def leaky_relu(x):
     return x if x > 0 else a*x
 
 def d_leaky_relu(x):
-    return D_one if x >= 0 else a
+    return 1 if x >= 0 else a
 
 def sigmoid(x):
     if x < 0:
-        return 1 - 1 / (1 + Decimal.exp(x))
-    return 1 / (1 + Decimal.exp(-x))
+        return 1 - 1 / (1 + math.exp(x))
+    return 1 / (1 + math.exp(-x))
 
 def d_sigmoid(x):
     return sigmoid(x)*(1-sigmoid(x))
 
 d_funcs = {relu: d_relu, leaky_relu: d_leaky_relu, sigmoid: d_sigmoid}
 
-def normalize_index(index: int, length: int):
+def normalize_index(index: int, length: int) -> int:
     if index < 0:
         return index + length
     return index
+
+network_spec = [
+    ('input_shape', int),
+    ('output_shape', int),
+    ('node_count', int),
+    ()
+]
 
 class Network:
 
@@ -46,34 +51,51 @@ class Network:
         self.node_count = input_shape + output_shape if node_count<input_shape+output_shape else node_count
         self.nodes = [{'to': set(), 'from': set(), 'output': None, 'delta': None, 'bias': None, 'activation-func': activation_func, 'activation-d-func': d_funcs[activation_func]} for node in range(node_count)]
         self.weights = dict()
-        self.learning_rate = Decimal(learning_rate)
+        self.learning_rate = learning_rate
         print("Initialized a Network: [Input: ", input_shape, ", Output: ", output_shape, ", Node Count :", node_count, "]")
 
-    def get_activation(self, node_i: int) -> Decimal:
-        node_i = normalize_index(node_i, self.node_count)
-        node = self.nodes[node_i]
+    def get_activation(self, node_i: int) -> float:
+        # Normalize node index
+        if node_i < 0:
+            node_i += self.node_count
 
-        if node['output']==None:
-            # Grab the activations of all input nodes simultaneously
-            
-            # Calculate weighted sum
-            activation = Decimal(0)
-            for from_node_i in node['from']:
-                activation += self.weights[(node_i, from_node_i)] * self.get_activation(from_node_i)
+        current_i = node_i
+        p_activation = 0.0
+        stack = []
+        used = set()
+
+        while(self.nodes[node_i]['output'] == None):
+            current = self.nodes[current_i]
+
+            for from_node_i in current['from'] - used:
+                if self.nodes[from_node_i]['output']==None:
+                    stack.append((current_i, p_activation, used))
+                    current_i = from_node_i
+                    p_activation = 0.0
+                    used = set()
+                    break
+                else:
+                    p_activation += self.weights[(current_i, from_node_i)] * self.nodes[from_node_i]['output']
+                    used.add(from_node_i)
+
+            if len(used)==0:
+                continue
 
             # Apply bias then activation function
-            node['output'] = node['activation-func'](activation + node['bias'])
+            current['output'] = current['activation-func'](p_activation + current['bias'])
+            if current_i!=node_i:
+                current_i, p_activation, used = stack.pop()
 
-        return node['output']
+        return self.nodes[node_i]['output']
 
-    def get_backward_delta(self, node_i: int ) -> Decimal:
+    def get_backward_delta(self, node_i: int ) -> float:
         node_i = normalize_index(node_i, self.node_count)
         node = self.nodes[node_i]
 
         if node['delta']==None:
 
             # Calculate weighted sum
-            error = Decimal(0)
+            error = 0.0
             for to_node_i in node['to']:
                 error += self.weights[(to_node_i, node_i)] * self.get_backward_delta(to_node_i)
 
@@ -90,7 +112,7 @@ class Network:
 
         # Initialize the input layer
         for node_i, activation in enumerate(input_layer):
-            self.nodes[node_i]['output'] = Decimal(activation)
+            self.nodes[node_i]['output'] = activation
 
         # Get the activation of each output node and return the output_layer
         return [self.get_activation(num-self.output_shape) for num in range(self.output_shape)]
@@ -124,13 +146,13 @@ class Network:
 
     def train(self, x: list, y: list, n_epoch=1):
         for node in self.nodes:
-            node['bias'] = Decimal(random.random())
+            node['bias'] = random.random()
         
         for epoch in range(n_epoch):
             for i, input_layer in enumerate(x):
-                sum_error = Decimal(0.0)
+                sum_error = 0.0
                 output_layer = self.forward_propagate(input_layer)
-                output_deltas = [(Decimal(y[i][j]) - output_layer[j]) * self.nodes[-self.output_shape:][j]['activation-d-func'](output_layer[j]) for j in range(self.output_shape)]
+                output_deltas = [(y[i][j] - output_layer[j]) * self.nodes[-self.output_shape:][j]['activation-d-func'](output_layer[j]) for j in range(self.output_shape)]
                 self.backward_propagate_error(output_deltas)
                 self.update_weights()
                 sum_error += sum([(y[i][j] - output_layer[j])**2 for j in range(self.output_shape)])
@@ -141,7 +163,7 @@ class Network:
         frm = normalize_index(frm, self.node_count)
         self.nodes[to]['from'].add(frm)
         self.nodes[frm]['to'].add(to)
-        self.weights[(to, frm)] = Decimal(random.random())
+        self.weights[(to, frm)] = random.random()
 
     def add_connections(self, to: list, frm: list):
         to = set([normalize_index(e, self.node_count) for e in to])
@@ -152,9 +174,9 @@ class Network:
             (self.nodes[node_i]['to']).update(to)
         for to_i in to:
             for frm_i in frm:
-                self.weights[(to_i, frm_i)] = Decimal(random.random())
-
-if __name__ == "__main__":
+                self.weights[(to_i, frm_i)] = random.random()
+                
+def run_xor_test():
     model = Network(input_shape=2, output_shape=1, node_count=103, learning_rate=0.01, activation_func=leaky_relu)
     model.add_connections(range(2, 102), range(0,2))
     model.add_connections((-1,), range(2, 102))
@@ -165,3 +187,11 @@ if __name__ == "__main__":
     model.train(x, y, 50)
 
     print([round(output[0]) for output in model.predict(((1, 1), (1, 0), (0, 1), (0, 0)))])
+
+if __name__ == '__main__':
+    run_xor_test()
+    #print(timeit.timeit(stmt='network.run_xor_test()', setup='gc.enable(); import network; ', number=20))
+
+# 231.3515047 : iterative
+# 193.9866752 : recursive
+# 1339.0884785 : with @jit
