@@ -4,9 +4,6 @@ import numpy as np
 import numba
 from numba import jitclass, jit, njit
 from numba import int32, int64, float32, float64, uint8
-from enum import IntEnum
-
-from utils import Stack
 
 # Activation Functions and Derivatives
 a = 0.01
@@ -21,11 +18,6 @@ def d_relu(x: float64) -> float64:
 
 np.random.seed(0)
 random.seed(0)
-
-class Node(IntEnum):
-        OUTPUT = 0
-        DELTA = 1
-        BIAS = 2
 
 network_spec = [
     ('input_shape', int32),
@@ -65,16 +57,16 @@ class JIT_Network:
     def get_activation(self, node_i: int32) -> float64:
         current_i = node_i
         p_activation = 0.0
-        stack = Stack()
+        stack = []
         used = 0
         
-        while(self.nodes[node_i, 0] == -1.0):
+        while(True):
             # print("Calculating activation of Node #", current_i, " from: ", self.frm[current_i][used:self.frm[current_i, self.node_count-1]])
             for from_node_i in self.frm[current_i][used:self.frm[current_i, self.node_count-1]]:
                 if from_node_i == -1:
                     break
                 if self.nodes[from_node_i, 0] == -1.0:
-                    stack.push((current_i, p_activation, used))
+                    stack.append((current_i, p_activation, used+1))
                     current_i = from_node_i
                     p_activation = 0.0
                     used = 0
@@ -82,31 +74,33 @@ class JIT_Network:
                 else:
                     p_activation += self.weights[current_i << 32 | from_node_i] * self.nodes[from_node_i, 0]
                     used += 1
-                    # print("p_activation: ", p_activation)
             else:
                 #Apply bias then activation function
-                output = p_activation + self.nodes[current_i, 2]
-
-                self.nodes[current_i, 0] = relu(output)
-                if current_i!=node_i:
-                    current_i, p_activation, used = stack.pop()
+                
+                self.nodes[current_i, 0] = relu(p_activation + self.nodes[current_i, 2])
+                if current_i==node_i:
+                    break
+                else:
+                    temp_i, p_activation, used = stack.pop()
+                    p_activation += self.weights[temp_i << 32|current_i] * self.nodes[current_i, 0]
+                    current_i = temp_i
                 #print("Node #", current_i, " = ", output)
         return self.nodes[node_i, 0]
     
     def get_backward_delta(self, node_i: int32) -> float64:
         current_i = node_i
         p_error = 0.0
-        stack = Stack()
+        stack = []
         used = 0
         
-        while(self.nodes[node_i, 1] == -1.0):
+        while(True):
             # print("Evaluating Node #", current_i, " from ", self.to[current_i][used:self.to[current_i, self.node_count-1]])
 
             for to_node_i in self.to[current_i][used:self.to[current_i, self.node_count-1]]:
                 if to_node_i == -1:
                     break
                 if self.nodes[to_node_i, 1] == -1.0:
-                    stack.push((current_i, p_error, used))
+                    stack.append((current_i, p_error, used+1))
                     current_i = to_node_i
                     p_error = 0.0
                     used = 0
@@ -115,13 +109,13 @@ class JIT_Network:
                     p_error += self.weights[to_node_i << 32 | current_i] * self.nodes[to_node_i, 1]
                     used += 1
             else:
-                # Hard coded d_relu
-                gradient = 1.0 if self.nodes[current_i, 0] > 0.0 else 0.0
-                # print(current_i, "'s gradient: ", gradient)
-
-                self.nodes[current_i, 1] = p_error * gradient
-                if current_i!=node_i:
-                    current_i, p_error, used = stack.pop()
+                self.nodes[current_i, 1] = p_error * d_relu(self.nodes[current_i, 0])
+                if current_i==node_i:
+                    break
+                else:
+                    temp_i, p_error, used = stack.pop()
+                    p_error += self.weights[current_i << 32| temp_i] * self.nodes[current_i, 1]
+                    current_i = temp_i
         return self.nodes[node_i, 1]
 
     def forward_propagate(self, input_layer):
@@ -160,7 +154,7 @@ class JIT_Network:
 
     def predict(self, inputs):
         outputs = []
-        for i in range(inputs):
+        for i in range(len(inputs)):
             outputs.append(self.forward_propagate(inputs[i]))
 
         return outputs
