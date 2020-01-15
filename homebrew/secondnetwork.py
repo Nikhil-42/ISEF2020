@@ -14,7 +14,7 @@ def from_categorical(ndarray: np.ndarray) -> np.ndarray:
     return outputs.astype(int)
 
 if __name__ == '__main__':
-    network = net.JIT_Network(input_shape=784, output_shape=10, node_count=784+512+10, learning_rate=0.00001)
+    network = net.JIT_Network(input_shape=784, output_shape=10, node_count=784+512+10, learning_rate=0.001)
 
     dataset = os.path.join(os.path.split(os.path.dirname(os.path.realpath(__file__)))[0], "datasets")
 
