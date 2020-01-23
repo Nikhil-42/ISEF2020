@@ -1,4 +1,4 @@
-import network as net
+import homebrew.network as net
 import numpy as np
 import os
 import mnist_io
@@ -14,25 +14,31 @@ def from_categorical(ndarray: np.ndarray) -> np.ndarray:
     return outputs.astype(int)
 
 if __name__ == '__main__':
-    network = net.JIT_Network(input_shape=784, output_shape=10, node_count=784+512+10, learning_rate=0.001)
+    network = net.JIT_Network(input_shape=784, output_shape=10, node_count=784+512+10,)
 
-    dataset = os.path.join(os.path.split(os.path.dirname(os.path.realpath(__file__)))[0], "datasets")
+    dataset = os.path.join(os.path.split(os.path.dirname(os.path.realpath(__file__)))[0], "Python\\datasets")
 
+    tos = net.gen_repeated_range(0, 10, 2)
+    print([to for to in tos])
     for i in range(0, 784):
         for j in range(784, 784+512):
             network.add_connection(j, i)
+
     for i in range(784, 784+512):
         for j in range(784+512, 784+512+10):
             network.add_connection(j, i)
     print("Connecting completed")
 
-    set_count = 10000
+    set_count = 60000
 
     train_images = mnist_io.images_from_file(os.path.join(dataset, "train-images-idx3-ubyte/train-images.idx3-ubyte"), set_count)
     train_images = train_images.reshape(set_count, 784).astype('float32')
     train_images /= 255
 
     train_labels = mnist_io.labels_from_file(os.path.join(dataset, "train-labels-idx1-ubyte/train-labels.idx1-ubyte"), set_count)
+
+    if set_count > 10000:
+        set_count = 10000
 
     test_images = mnist_io.images_from_file(os.path.join(dataset, "t10k-images-idx3-ubyte/t10k-images.idx3-ubyte"), set_count)
     test_images = test_images.reshape(set_count, 784).astype('float32')
@@ -42,7 +48,7 @@ if __name__ == '__main__':
 
     # view = mnist_view.ViewData(train_images.reshape(set_count, 28, 28), train_labels)
 
-    network.train(train_images, to_categorical(train_labels, 10), 2)
+    network.train(train_images, to_categorical(train_labels, 10), 1, 0.001, 2000, 0.01)
 
     print(from_categorical(np.array(network.predict(test_images[:5]))), "===", test_labels[:5])
 
