@@ -6,6 +6,8 @@ from numba import jitclass, jit, njit
 from numba import int32, int64, float32, uint8
 import timeit
 
+import time
+
 # Activation Functions and Derivatives
 a = 0.01
 
@@ -53,7 +55,6 @@ network_spec = [
     ('deps', int32[:,:]),
     ('weights', float32[:,:]),
     ('connections', numba.typeof({(int32(0), int32(0))})),
-    ('activation_funcs', uint8[:])
 ]
 
 @jitclass(network_spec)
@@ -75,7 +76,6 @@ class JIT_Network:
         self.deps = np.column_stack((np.zeros(shape=self.node_count, dtype=int32), np.full(shape=self.node_count, fill_value=self.node_count, dtype=int32)))
         self.weights = np.random.random((self.node_count, self.node_count)).astype(float32)
         self.connections = {(int32(0), int32(0))}
-        self.activation_funcs = np.array((self.node_count,), dtype=uint8)
         print("Initialized a JIT_Network: [Input: ", self.input_shape, ", Output: ", self.output_shape, ", Node Count :", self.node_count, "]")
 
     def get_activation(self, node_i: int32) -> float32:
@@ -83,7 +83,7 @@ class JIT_Network:
 
         for from_node_i in self.frm[node_i][:self.frm[node_i, self.node_count-1]]:
             p_activation += self.weights[node_i, from_node_i] * self.nodes[from_node_i, 0]
-        
+
         #Apply bias then activation function
         self.nodes[node_i, 0] = leaky_relu(p_activation + self.nodes[node_i, 2])
 
@@ -105,7 +105,7 @@ class JIT_Network:
         # Initialize the input layer
         for node_i in range(self.input_shape):
             self.nodes[node_i, 0] = input_layer[node_i]
-
+        
         for node_i in range(self.input_shape, self.node_count):
             self.get_activation(node_i)
 
@@ -121,14 +121,12 @@ class JIT_Network:
         # Get the activation of each input node and return the input_layer
         for node_i in range(self.node_count-self.output_shape-1, -1, -1):
             self.get_backward_delta(node_i)
-        # print(self.nodes)
 
     def update_weights(self, learning_rate):
         for connection in self.connections:
-            self.weights[connection[0], connection[1]] += learning_rate * self.nodes[connection[0], 1] * self.nodes[connection[1], 0]
+            self.weights[connection] += learning_rate * self.nodes[connection[0], 1] * self.nodes[connection[1], 0]
         for node_i in range(self.node_count):
-            if not self.nodes[node_i, 1]==-1.0:
-                self.nodes[node_i, 2] += learning_rate * self.nodes[node_i, 1]
+            self.nodes[node_i, 2] += learning_rate * self.nodes[node_i, 1]
 
     def predict(self, inputs):
         outputs = np.zeros((len(inputs), self.output_shape), dtype=float32)
@@ -189,10 +187,8 @@ class JIT_Network:
 
         if batch_size > len(x):
             batch_size = len(x)
-        
-        np.random.seed(0)
-        for i, rand in enumerate(np.random.random(self.node_count)):
-            self.nodes[i, 2] = rand
+
+        self.nodes[:, 2] = np.random.random(self.node_count)
         
         acc_error = 0.0
         set_count = 0
@@ -212,7 +208,7 @@ class JIT_Network:
                     self.update_weights(learning_rate)
                     for j in range(self.output_shape):
                         error += (y[i, j] - output_layer[j])**2
-                
+
                 sum_error += error
                 set_count += batch_size
                 # print("Batch:", int(b/batch_size), " AvgError:", error/batch_size)
@@ -223,8 +219,14 @@ class JIT_Network:
             # print("Epoch: ", epoch, " Summed Error: ", sum_error)
             acc_error += sum_error
             if break_out:
-                break
+                break_out
         return acc_error
+
+    def set_weight(self, connection, weight):
+        self.weights[connection] = weight
+
+    def get_weight(self, connection):
+        return self.weights[connection]
 
     def add_connection(self, to: int32, frm: int32):
         if to <= frm or (to, frm) in self.connections:
@@ -236,7 +238,25 @@ class JIT_Network:
         self.frm[to, self.node_count-1] += 1
         self.deps[frm, 1] = min((to, self.deps[frm, 1]))
         self.connections.add((int32(to), int32(frm)))
-        # print("Added connection [", to,", ", frm, "] with Weight: ", self.weights[to, frm])
+
+    def set_connections(self, connections):
+        self.to[:,-1].fill(0)
+        self.frm[:,-1].fill(0)
+        self.connections = connections
+        
+        for connection in connections:
+            to, frm = connection
+            if to <= frm:
+                self.connections.remove(connection)
+                continue
+            # print("connecting node[", frm, "] to node[", to, "]")
+            self.to[frm, self.to[frm, self.node_count-1]] = to
+            self.to[frm, self.node_count-1] += 1
+            self.deps[to, 0] = max((self.deps[to, 0], frm))
+            self.frm[to, self.frm[to, self.node_count-1]] = frm
+            self.frm[to, self.node_count-1] += 1
+            self.deps[frm, 1] = min((to, self.deps[frm, 1]))
+            # print("connected  node[", frm, "] to node[", to, "]")
 
     def add_connections(self, tos, frms):
         new_connections = set(map(lambda x, y: (x, y), tos, frms))
@@ -272,9 +292,13 @@ def run_xor_test():
     #     model.add_connection(102, i)
 
     model.add_connections(np.array([2,2,3,3,4,4]), np.array([0, 1, 0, 1, 2, 3]))
+    
+    @njit
+    def nopython_round(x):
+        return round(x)
 
-    print(model.train(x, y, 1, 0.1, 1000, 0.001))
-    print(model.validate(x, y, nopython_round))
+    print("Training error: ", model.train(x, y, 1, 0.1, 1000, 0.001))
+    print("Validation accuracy: ", model.validate(x, y, nopython_round))
     # model.prefit()
     print(model.predict(((1, 1), (1, 0), (0, 1), (0, 0))))
 
