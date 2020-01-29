@@ -55,15 +55,16 @@ network_spec = [
     ('deps', int32[:,:]),
     ('weights', float64[:,:]),
     ('connections', numba.typeof({(int32(0), int32(0))})),
-    ('learning_rate', float32)
+    ('learning_rate', float32),
+    ('id', int32)
 ]
 
 @jitclass(network_spec)
 class JIT_Network:
 
-    def __init__(self, input_shape: int, output_shape: int, node_count=0, learning_rate=0.01):
-        np.random.seed(12)
-        random.seed(12)
+    def __init__(self, input_shape: int, output_shape: int, node_count=0, learning_rate=0.01, id_num=-1):
+        # np.random.seed(id_num)
+        # random.seed(id_num)
         self.input_shape = input_shape
         self.output_shape = output_shape
         self.node_count = input_shape + output_shape if node_count<input_shape+output_shape else node_count
@@ -78,6 +79,7 @@ class JIT_Network:
         self.weights = np.random.random((self.node_count, self.node_count)).astype(float64)/self.node_count
         self.connections = {(int32(0), int32(0))}
         self.learning_rate = learning_rate
+        self.id = id_num
         print("Initialized a JIT_Network: [Input: ", self.input_shape, ", Output: ", self.output_shape, ", Node Count :", self.node_count, "]")
 
     def get_activation(self, node_i: int32) -> float64:
@@ -198,7 +200,7 @@ class JIT_Network:
 
         for epoch in range(n_epoch):
             sum_error = 0.0
-            np.random.seed(12)
+            # np.random.seed(12)
 
             for b in range(0, len(x), batch_size):
                 error = 0.0
@@ -230,7 +232,7 @@ class JIT_Network:
         return self.weights[connection]
 
     def add_connection(self, to: int32, frm: int32):
-        if to <= frm or (to, frm) in self.connections:
+        if to <= frm or (to, frm) in self.connections or to < self.input_shape or frm > self.node_count-self.output_shape:
             return
         self.to[frm, self.to[frm, self.node_count-1]] = to
         self.to[frm, self.node_count-1] += 1
@@ -243,10 +245,12 @@ class JIT_Network:
     def add_connections(self, tos, frms):
         new_connections = set(map(lambda x, y: (x, y), tos, frms))
         new_connections.difference_update(self.connections)
+        self.connections.update(new_connections)
         
         for connection in new_connections:
             to, frm = connection
-            if to <= frm:
+            if to <= frm or to < self.input_shape or frm > self.node_count-self.output_shape:
+                self.connections.remove(connection)
                 continue
             # print("connecting node[", frm, "] to node[", to, "]")
             self.to[frm, self.to[frm, self.node_count-1]] = to
@@ -257,7 +261,6 @@ class JIT_Network:
             self.deps[frm, 1] = min((to, self.deps[frm, 1]))
             # print("connected  node[", frm, "] to node[", to, "]")
 
-        self.connections.update(new_connections)
 
     def set_connections(self, connections):
         self.to[:,-1].fill(0)
@@ -266,7 +269,7 @@ class JIT_Network:
         
         for connection in connections:
             to, frm = connection
-            if to <= frm:
+            if to <= frm or to < self.input_shape or frm > self.node_count-self.output_shape:
                 self.connections.remove(connection)
                 continue
             # print("connecting node[", frm, "] to node[", to, "]")
@@ -288,15 +291,15 @@ class JIT_Network:
             self.remove_connection(self.connections.pop())
 
 def run_xor_test():
-    np.random.seed(0)
-    random.seed(0)
+    # np.random.seed(0)
+    # random.seed(0)
 
     x = np.array([[1, 0] if rand < 0.25 else [0, 1] if rand < 0.5 else [1, 1] if rand < 0.75 else [0,0] for rand in np.random.random(60000)], dtype=int)
     y = np.array([[1,] if np.sum(itm)==1 else [0,] for itm in x], dtype=int)
 
     node_count = 5
 
-    model = JIT_Network(input_shape=2, output_shape=1, node_count=node_count, learning_rate=0.1)
+    model = JIT_Network(input_shape=2, output_shape=1, node_count=node_count, learning_rate=0.1, id_num=10)
     # for i in range(2, node_count-1):
     #     model.add_connection(i, 0)
     #     model.add_connection(i, 1)
