@@ -1,5 +1,6 @@
 import io
 import struct
+from numba import njit
 import numpy as np
 
 #temp_lim = 10

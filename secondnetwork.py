@@ -1,31 +1,35 @@
 import homebrew.network as net
 import numpy as np
+from numba import njit
 import os
 import mnist_io
 # import mnist_view
 
+@njit
 def to_categorical(ndarray, classes: int) -> np.ndarray:
     return np.array([[0 if val!=i else 1 for i in range(classes)] for val in ndarray])
 
-def from_categorical(ndarray: np.ndarray) -> np.ndarray:
-    outputs = np.empty(0)
-    for arr in ndarray:
-        outputs = np.append(outputs, (arr == max(arr)).nonzero())
+@njit
+def from_categorical(ndarray):
+    outputs = np.zeros(ndarray.shape[0])
+    for i, arr in enumerate(ndarray):
+        outputs[i] = arr.argsort()[-1]
     return outputs.astype(int)
 
 if __name__ == '__main__':
-    network = net.JIT_Network(input_shape=784, output_shape=10, node_count=784+512+10,)
+    hidden_nodes = 150
+    network = net.JIT_Network(input_shape=784, output_shape=10, node_count=784+hidden_nodes+10, learning_rate=0.001, id_num=0)
 
     dataset = os.path.join(os.path.split(os.path.dirname(os.path.realpath(__file__)))[0], "Python\\datasets")
 
-    tos = net.gen_repeated_range(0, 10, 2)
-    print([to for to in tos])
+    # tos = net.gen_repeated_range(0, 10, 2)
+    # print([to for to in tos])
     for i in range(0, 784):
-        for j in range(784, 784+512):
+        for j in range(784, 784+hidden_nodes):
             network.add_connection(j, i)
 
-    for i in range(784, 784+512):
-        for j in range(784+512, 784+512+10):
+    for i in range(784, 784+hidden_nodes):
+        for j in range(784+hidden_nodes, 784+hidden_nodes+10):
             network.add_connection(j, i)
     print("Connecting completed")
 
@@ -48,9 +52,14 @@ if __name__ == '__main__':
 
     # view = mnist_view.ViewData(train_images.reshape(set_count, 28, 28), train_labels)
 
-    network.train(train_images, to_categorical(train_labels, 10), 1, 0.001, 2000, 0.01)
+    network.train(train_images, to_categorical(train_labels, 10), 1, 2000, 0.01)
 
-    print(from_categorical(np.array(network.predict(test_images[:5]))), "===", test_labels[:5])
+
+    @njit
+    def categorical_compare(output_layer, expected):
+        return output_layer.argsort()[-1] == expected.argsort()[-1]
+
+    print(network.validate(test_images, to_categorical(test_labels, 10), categorical_compare))
 
    # 2:34 Stack()
    # 2:18 []

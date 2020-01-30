@@ -11,7 +11,7 @@ def spawn_populations(population_size, population_count, input_shape, output_sha
 
     for i in range(population_count):
         node_count = np.random.randint(0, node_cap)
-        node_count = 5
+        node_count = 1500
         populations.append(spawn_population(population_size, input_shape, output_shape, node_count))
     return populations
 
@@ -118,8 +118,8 @@ def competition(fitnesses, population, new_fitnesses, new_networks):
             population[rank_list[0]] = new_net
 
 @njit(parallel=True)
-def evolution(x, y, val_x, val_y, compare, poplation_size, population_count, node_cap, r_seed):    
-    populations = spawn_populations(poplation_size, population_count, x.shape[1], y.shape[1], node_cap)
+def evolution(x, y, val_x, val_y, compare, population_size, population_count, node_cap, r_seed):    
+    populations = spawn_populations(population_size, population_count, x.shape[1], y.shape[1], node_cap)
 
     for i in prange(population_count):
         population = populations[i]
@@ -134,8 +134,6 @@ def evolution(x, y, val_x, val_y, compare, poplation_size, population_count, nod
                 fitnesses[mutated[k]] = mutation_fitnesses[k]
             new_fitnesses = evaluation(x, y, val_x, val_y, compare, new_networks)
             competition(fitnesses, population, new_fitnesses, new_networks)
-            if max(fitnesses) >= 1/6:
-                break
         index = fitnesses.argsort()[-1]
         print(index)
         print(fitnesses[index])
@@ -156,5 +154,5 @@ if __name__ == "__main__":
             truth += not round(out) == expected[i]
         return truth == 1
 
-    evolution(x, y, x, y, nopython_round, 30, 1, 10, 42)
+    evolution(x, y, x, y, nopython_round, population_size=30, population_count=1, node_cap=10, r_seed=12)
     # evolution.parallel_diagnostics()
