@@ -1,54 +1,49 @@
 import io
 import struct
-from numba import njit
 import numpy as np
 
-#temp_lim = 10
+def images_from_file(filepath: str, image_count=None) -> np.array:
+    with open(filepath, 'rb') as file:
+        magic_number = struct.unpack(">i", file.read(4))[0]
+        if image_count == None:
+            image_count = struct.unpack(">i", file.read(4))[0]
+        else:
+            file.read(4)
 
-def images_from_file(filepath: str, image_count=0) -> np.array:
+        image_height = struct.unpack(">i", file.read(4))[0]
+        image_width = struct.unpack(">i", file.read(4))[0]
 
-    file = open(filepath, 'rb')
-    
-    magic_number = struct.unpack(">i", file.read(4))[0]
-    if image_count == 0:
-        image_count = struct.unpack(">i", file.read(4))[0]
-    else:
-        file.read(4)
+        print("Preparing to load ", image_count, " images from: ", filepath)
 
-    print("Preparing to load ", image_count, " images from: ", filepath)
+        # For debugging speed, TODO Delete later
+        #image_count = temp_lim
 
-    # For debugging speed, TODO Delete later
-    #image_count = temp_lim
+        PIXEL_SIZE = 1
+        images_bytes = bytearray(PIXEL_SIZE*image_height*image_width*image_count)
+        file.readinto(images_bytes)
 
+        images = np.frombuffer(images_bytes, dtype=np.uint8)
+        images = images.reshape((image_count, image_height, image_width))
 
-    image_height = struct.unpack(">i", file.read(4))[0]
-    image_width = struct.unpack(">i", file.read(4))[0]
-
-    images = np.zeros((image_count, image_height, image_width), dtype=int)
-
-    for i in range(image_count):
-        get_next_image(file, image_height, image_width, images[i])
-
-    print("Loaded ", len(images), " images")
-    return images
-
-def get_next_image(file, image_width: int, image_height: int, image: list) -> list:
-    for y in range(image_height):
-        for x in range(image_width):
-            image[y, x] = struct.unpack(">B", file.read(1))[0]
+        print("Loaded ", len(images), " images")
+        return images
+    return None
 
 def labels_from_file(filepath: str, label_count=0):
-    file = open(filepath, 'rb')
+    with open(filepath, 'rb') as file:
+        magic_number = struct.unpack(">i", file.read(4))[0]
+        if label_count == 0:
+            label_count = struct.unpack(">i", file.read(4))[0]
+        else:
+            file.read(4)
 
-    magic_number = struct.unpack(">i", file.read(4))[0]
-    if label_count == 0:
-        label_count = struct.unpack(">i", file.read(4))[0]
-    else:
-        file.read(4)
+        LABEL_SIZE = 1
+        labels_bytes = bytearray(label_count*LABEL_SIZE)
+        file.readinto(labels_bytes)
 
-    labels = np.zeros(label_count, dtype=int)
+        labels = np.frombuffer(labels_bytes, dtype=np.uint8)
+        return labels
+    return None
 
-    for i in range (0, label_count):
-        labels[i] = struct.unpack(">B", file.read(1))[0]
-
-    return labels
+if __name__ == '__main__':
+    new = images_from_file('datasets\\train-images-idx3-ubyte\\train-images.idx3-ubyte')

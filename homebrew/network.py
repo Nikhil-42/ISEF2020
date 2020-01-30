@@ -149,17 +149,6 @@ class JIT_Network:
                 pass
         return correct/len(val_x)
 
-    def prefit(self):
-        self.weights[2, 0] = -0.81781853
-        self.weights[2, 1] = 0.48803631
-        self.weights[3, 0] = 0.71323677
-        self.weights[3, 1] = -0.71286155
-        self.weights[4, 2] = 2.04849235
-        self.weights[4, 3] = 1.40170791
-
-        for i in range(self.node_count):
-            self.nodes[i, 2] = 0.0
-
     def train(self, x: list, y: list, n_epoch=1, batch_size=1000, target_error=0.01):
 
         # # Generate forward layers
@@ -289,6 +278,22 @@ class JIT_Network:
     def remove_random_connection(self):
         if len(self.connections > 1):
             self.remove_connection(self.connections.pop())
+    
+    def clone(self):
+        network = JIT_Network(0, 0, 0, 0.0, -1)
+        network.input_shape = self.input_shape
+        network.output_shape = self.output_shape
+        network.node_count = self.node_count
+        network.nodes = self.nodes
+        network.to = self.to
+        network.frm = self.frm
+        network.deps = self.deps
+        network.weights = self.weights
+        network.connections = self.connections
+        network.learning_rate = self.learning_rate
+        network.id = self.id
+        return network
+
 
 def run_xor_test():
     # np.random.seed(0)
@@ -316,7 +321,6 @@ def run_xor_test():
 
     print("Training error: ", model.train(x, y, 1, 1000, 0.001))
     print("Validation accuracy: ", model.validate(x, y, nopython_round))
-    # model.prefit()
     print(model.predict(((1, 1), (1, 0), (0, 1), (0, 0))))
 
 if __name__ == '__main__':

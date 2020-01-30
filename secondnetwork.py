@@ -18,7 +18,7 @@ def from_categorical(ndarray):
 
 if __name__ == '__main__':
     hidden_nodes = 150
-    network = net.JIT_Network(input_shape=784, output_shape=10, node_count=784+hidden_nodes+10, learning_rate=0.001, id_num=0)
+    network = net.JIT_Network(input_shape=784, output_shape=10, node_count=784+hidden_nodes+10, learning_rate=0.005, id_num=0)
 
     dataset = os.path.join(os.path.split(os.path.dirname(os.path.realpath(__file__)))[0], "Python\\datasets")
 

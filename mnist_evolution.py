@@ -33,4 +33,4 @@ test_labels = to_categorical(mnist_io.labels_from_file(os.path.join(dataset, "t1
 def categorical_compare(output_layer, expected):
     return output_layer.argsort()[-1]==expected.argsort()[-1]
 
-evolution(train_images, train_labels, test_images, test_labels, categorical_compare, population_size=30, population_count=1, node_cap=2000, r_seed=12)
+evolved_network = evolution(train_images, train_labels, test_images, test_labels, categorical_compare, population_size=15, population_count=2, node_cap=944, r_seed=12)
