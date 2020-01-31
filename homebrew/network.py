@@ -279,20 +279,21 @@ class JIT_Network:
         if len(self.connections > 1):
             self.remove_connection(self.connections.pop())
     
-    def clone(self):
-        network = JIT_Network(0, 0, 0, 0.0, -1)
-        network.input_shape = self.input_shape
-        network.output_shape = self.output_shape
-        network.node_count = self.node_count
-        network.nodes = self.nodes
-        network.to = self.to
-        network.frm = self.frm
-        network.deps = self.deps
-        network.weights = self.weights
-        network.connections = self.connections
-        network.learning_rate = self.learning_rate
-        network.id = self.id
-        return network
+@njit
+def clone(in_network):
+    network = JIT_Network(0, 0, 0, 0.0, -1)
+    network.input_shape = in_network.input_shape
+    network.output_shape = in_network.output_shape
+    network.node_count = in_network.node_count
+    network.nodes = in_network.nodes
+    network.to = in_network.to
+    network.frm = in_network.frm
+    network.deps = in_network.deps
+    network.weights = in_network.weights
+    network.connections = in_network.connections
+    network.learning_rate = in_network.learning_rate
+    network.id = in_network.id
+    return network
 
 
 def run_xor_test():

@@ -1,17 +1,16 @@
+import utils
 import numba
-import random
 import numpy as np
 from numba import njit, prange
 from numba.typed import List
-import homebrew.network as net
+from homebrew.network import JIT_Network, clone
 
 @njit
 def spawn_populations(population_size, population_count, input_shape, output_shape, node_cap):    
     populations = List()
 
     for i in range(population_count):
-        node_count = np.random.randint(0, node_cap)
-        node_count = 1500
+        node_count = np.random.randint(input_shape, node_cap)
         populations.append(spawn_population(population_size, input_shape, output_shape, node_count))
     return populations
 
@@ -20,7 +19,7 @@ def spawn_population(population_size, input_shape, output_shape, node_count):
     population = List()
     
     for j in range(population_size):
-        new_net = net.JIT_Network(input_shape, output_shape, node_count, np.random.random()/node_count, j)
+        new_net = JIT_Network(input_shape, output_shape, node_count, np.random.random()/node_count, j)
         node_count = new_net.node_count
         for node in range(1, output_shape+1):
             to_node = node_count-node
@@ -41,12 +40,7 @@ def evaluation(x, y, val_x, val_y, compare, population):
     for j, network in enumerate(population):
         traits = network.train(x, y, 1, 1000, 0.001)
         if np.isnan(traits) or len(network.connections) == 0:
-            print(network.connections)
-            if (1, 0) in network.connections:
-                fitnesses[j] = -1
-            else:
-                fitnesses[j] = -2
-
+            fitnesses[j] = -1
         else:
             val = network.validate(val_x, val_y, compare)
             fitnesses[j] = val**10/len(network.connections)
@@ -84,9 +78,10 @@ def recombination(input_shape, output_shape, pairs, population):
         mom = population[pairs[i, 0]]
         dad = population[pairs[i, 1]]
         connections = mom.connections | dad.connections
-        for j in range(random.randint(0, len(connections)-1)):
-            connections.pop()
-        new_net = net.JIT_Network(input_shape, output_shape, mom.node_count, 0.5*(mom.learning_rate+dad.learning_rate), mom.id+dad.id)
+        if len(connections)>0:
+            for j in range(np.random.randint(0, len(connections)-1)):
+                connections.pop()
+        new_net = JIT_Network(input_shape, output_shape, mom.node_count, 0.5*(mom.learning_rate+dad.learning_rate), mom.id+dad.id)
         new_net.set_connections(connections)
         for connection in connections:
             if connection in mom.connections:
@@ -121,38 +116,32 @@ def competition(fitnesses, population, new_fitnesses, new_networks):
 def evolution(x, y, val_x, val_y, compare, population_size, population_count, node_cap, r_seed):    
     populations = spawn_populations(population_size, population_count, x.shape[1], y.shape[1], node_cap)
 
-    for i in prange(population_count):
+    for i in range(population_count):
         population = populations[i]
         fitnesses = evaluation(x, y, val_x, y, compare, population)
-        for j in range(500):
-            print(max(fitnesses))
+        best_fitness = 0
+        best_network = None
+        for j in range(100):
+            if fitnesses.max() > best_fitness:
+                best_fitness = fitnesses.max()
+                best_network = clone(population[fitnesses.argsort()[-1]])
+                print(best_fitness, fitnesses[fitnesses.argsort()[-1]])
+            #mutated = mutation(population, 1)
+            #mutation_fitnesses = evaluation(x, y, val_x, val_y, compare, [population[mutate] for mutate in mutated])
+            #for k in prange(len(mutated)):
+            #    fitnesses[mutated[k]] = mutation_fitnesses[k]
             pairs = selection(2, fitnesses, population)
             new_networks = recombination(x.shape[1], y.shape[1], pairs, population)
-            mutated = mutation(population, 5)
-            mutation_fitnesses = evaluation(x, y, val_x, val_y, compare, [population[mutate] for mutate in mutated])
-            for k in prange(len(mutated)):
-                fitnesses[mutated[k]] = mutation_fitnesses[k]
             new_fitnesses = evaluation(x, y, val_x, val_y, compare, new_networks)
             competition(fitnesses, population, new_fitnesses, new_networks)
-        index = fitnesses.argsort()[-1]
-        print(index)
-        print(fitnesses[index])
-        best = population[index]
+            print(fitnesses.max(), best_fitness)
         subset = np.array([(1, 1),(1, 0), (0,1), (0, 0)])
-        print(subset, "\n", best.predict(subset))
-        print(best.validate(x, y, compare))
-        print(best.connections, best.learning_rate)
+        print(subset, "\n", best_network.predict(subset))
+        print(best_network.validate(x, y, compare))
+        print(best_network.connections, best_network.learning_rate)
 
 if __name__ == "__main__":
     x = np.array([[1, 0] if rand < 0.25 else [0, 1] if rand < 0.5 else [1, 1] if rand < 0.75 else [0,0] for rand in np.random.random(60000)], dtype=int)
     y = np.array([[1,] if np.sum(itm)==1 else [0,] for itm in x], dtype=int)
-    
-    @njit
-    def nopython_round(output_layer, expected):
-        truth = 1
-        for i, out in enumerate(output_layer):
-            truth += not round(out) == expected[i]
-        return truth == 1
 
-    evolution(x, y, x, y, nopython_round, population_size=30, population_count=1, node_cap=10, r_seed=12)
-    # evolution.parallel_diagnostics()
+    evolution(x, y, x, y, utils.jit_round_compare, population_size=15, population_count=5, node_cap=5, r_seed=12)
