@@ -1,5 +1,7 @@
 import numpy as np
+import traceback
 import numba
+import sys
 
 @numba.njit
 def jit_to_categorical(ndarray, classes: int) -> np.ndarray:
@@ -18,8 +20,9 @@ def jit_categorical_compare(output_layer, expected):
 
 class OutSplit(object):
     def __init__(self, filename):
-        self.file = open("".join(['data/', filename]), 'w')
+        self.file = open("".join(['data/', filename, '.data']), 'w')
         self.stdout = sys.stdout
+        print("Console is logging at " + filename)
 
     def __enter__(self):
         sys.stdout = self
@@ -44,3 +47,7 @@ def jit_round_compare(output_layer, expected):
     for i, out in enumerate(output_layer):
         truth += not round(out) == expected[i]
     return truth == 1
+
+@numba.jit
+def jit_near_compare(output_layer, expected):
+    return np.all((output_layer-expected)**2 < 0.1)

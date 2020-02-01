@@ -1,5 +1,6 @@
-from evolutionary_module import evolution
+from evolutionary_module import evolve_node_count
 import mnist_io
+import datetime
 import utils
 import os
 
@@ -17,4 +18,7 @@ test_images /= 255
 
 test_labels = utils.jit_to_categorical(mnist_io.labels_from_file(os.path.join(dataset, "t10k-labels-idx1-ubyte/t10k-labels.idx1-ubyte"), 10000), 10)
 
-evolved_network = evolution(train_images, train_labels, test_images, test_labels, utils.jit_categorical_compare, population_size=15, population_count=2, node_cap=944, r_seed=12)
+d = datetime.datetime.now()
+with utils.OutSplit('mnist_evolution_{year}.{month}.{day}_{hour}.{minute}.{second}'.format(year=d.year, month=d.month, day=d.day, hour=d.hour, minute=d.minute, second=d.second)):
+    evolved_network = evolve_node_count(train_images, train_labels, test_images, test_labels, utils.jit_categorical_compare, population_count=10, population_size=15, node_cap=1000, generations=50, target_accuracy=0.9, r=42)
+    print(evolved_network.connections, "\n", evolved_network.weights, "\n",evolved_network.learning_rate)

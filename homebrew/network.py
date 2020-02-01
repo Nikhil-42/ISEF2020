@@ -80,7 +80,7 @@ class JIT_Network:
         self.connections = {(int32(0), int32(0))}
         self.learning_rate = learning_rate
         self.id = id_num
-        print("Initialized a JIT_Network: [Input: ", self.input_shape, ", Output: ", self.output_shape, ", Node Count :", self.node_count, "]")
+        # print("Initialized a JIT_Network: [Input: ", self.input_shape, ", Output: ", self.output_shape, ", Node Count :", self.node_count, "]")
 
     def get_activation(self, node_i: int32) -> float64:
         p_activation = 0.0
@@ -133,12 +133,18 @@ class JIT_Network:
             self.nodes[node_i, 2] += self.learning_rate * self.nodes[node_i, 1]
 
     def predict(self, inputs):
+        if (0, 0) in self.connections:
+            print("Network hasn't been trained")
+            
         outputs = np.zeros((len(inputs), self.output_shape), dtype=float64)
         for i in numba.prange(len(inputs)):
             outputs[i] = self.forward_propagate(inputs[i])
         return outputs
 
     def validate(self, val_x, val_y, compare):
+        if (0, 0) in self.connections:
+            print("Network hasn't been trained")
+
         correct = 0
         for i in range(len(val_x)):
             output_layer = self.forward_propagate(val_x[i])
@@ -179,6 +185,9 @@ class JIT_Network:
 
         if batch_size > len(x):
             batch_size = len(x)
+
+        if (0, 0) in self.connections:
+            self.remove_connection((0, 0))
 
         self.nodes[:, 2] = np.random.random(self.node_count)
         
