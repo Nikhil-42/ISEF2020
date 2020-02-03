@@ -294,12 +294,12 @@ def clone(in_network):
     network.input_shape = in_network.input_shape
     network.output_shape = in_network.output_shape
     network.node_count = in_network.node_count
-    network.nodes = in_network.nodes
-    network.to = in_network.to
-    network.frm = in_network.frm
-    network.deps = in_network.deps
-    network.weights = in_network.weights
-    network.connections = in_network.connections
+    network.nodes = in_network.nodes.copy()
+    network.to = in_network.to.copy()
+    network.frm = in_network.frm.copy()
+    network.deps = in_network.deps.copy()
+    network.weights = in_network.weights.copy()
+    network.connections = in_network.connections.copy()
     network.learning_rate = in_network.learning_rate
     network.id = in_network.id
     return network

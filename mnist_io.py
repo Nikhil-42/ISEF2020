@@ -29,10 +29,10 @@ def images_from_file(filepath: str, image_count=None) -> np.array:
         return images
     return None
 
-def labels_from_file(filepath: str, label_count=0):
+def labels_from_file(filepath: str, label_count=None):
     with open(filepath, 'rb') as file:
         magic_number = struct.unpack(">i", file.read(4))[0]
-        if label_count == 0:
+        if label_count == None:
             label_count = struct.unpack(">i", file.read(4))[0]
         else:
             file.read(4)

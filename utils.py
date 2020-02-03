@@ -1,5 +1,6 @@
 import numpy as np
 import traceback
+import datetime
 import numba
 import sys
 
@@ -14,18 +15,17 @@ def jit_from_categorical(ndarray: np.ndarray) -> np.ndarray:
         outputs = np.append(outputs, (arr == max(arr)).nonzero())
     return outputs.astype(int)
 
-@numba.njit
-def jit_categorical_compare(output_layer, expected):
-    return output_layer.argsort()[-1]==expected.argsort()[-1]
-
 class OutSplit(object):
-    def __init__(self, filename):
+    def __init__(self, filename, timestamp=True):
+        if timestamp:
+            filename += '_{d.year}.{d.month}.{d.day}_{d.hour}.{d.minute}.{d.second}'.format(d=datetime.datetime.now())
         self.file = open("".join(['data/', filename, '.data']), 'w')
         self.stdout = sys.stdout
         print("Console is logging at " + filename)
 
     def __enter__(self):
         sys.stdout = self
+        return self
     
     def __exit__(self, exc_type, exc_value, tb):
         sys.stdout = self.stdout
@@ -38,8 +38,12 @@ class OutSplit(object):
         self.stdout.write(data)
 
     def flush(self):
-        # self.file.flush()
+        self.file.flush()
         self.stdout.flush()
+
+@numba.njit
+def jit_categorical_compare(output_layer, expected):
+    return output_layer.argsort()[-1]==expected.argsort()[-1]
 
 @numba.njit
 def jit_round_compare(output_layer, expected):
