@@ -1,4 +1,5 @@
 import evolutionary_module as evm
+from homebrew.network import JIT_Network
 import numpy as np
 import utils
 
@@ -12,11 +13,31 @@ x = np.column_stack((
 x = x / np.max(x, axis=0)
 y = np.array([float(item==b'B') for item in cancer_data['diagnosis']]).reshape(len(x), 1)
 
-val_x = x[-20:]
-val_y = y[-20:]
 
-x = x[:-20]
-y = y[:-20]
+with utils.OutSplit('breast-cancer'):
+    population_count = 15
+    population_size = 20
+    node_cap = 300
+    generations = 50
+    target_accuracy = 0.95
+    r = 10
 
- # with utils.OutSplit('breast-cancer'):
-best_network = evm.evolve_node_count(x, y, val_x, val_y, utils.jit_round_compare, 15, 15, 500, 50, 0.97, 100)
+    np.random.seed(r)
+
+    np.random.shuffle(x)
+    np.random.shuffle(y)
+
+    val_x = x[-100:]
+    val_y = y[-100:]
+
+    x = x[:-100]
+    y = y[:-100]
+
+    print('population_count: ' + str(population_count))
+    print('population_size: ' + str(population_size))
+    print('node_cap: ' + str(node_cap))
+    print('generations: ' + str(generations))
+    print('target_accuracy: {}%'.format(target_accuracy*100))
+    print('random_seed: ' + str(r))
+
+    best_network = evm.evolve_node_count(x, y, val_x, val_y, utils.jit_round_compare, population_count, population_size, node_cap, generations, target_accuracy, r)
