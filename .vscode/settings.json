@@ -1,4 +1,21 @@
 {
     "git.ignoreLimitWarning": true,
-    "python.pythonPath": "C:\\Users\\kapow\\Miniconda3\\envs\\homebrew_env\\python.exe"
+    "python.pythonPath": "C:\\Users\\kapow\\Miniconda3\\envs\\homebrew_env\\python.exe",
+    "workbench.colorTheme": "Default Dark+",
+    "workbench.colorCustomizations": {
+        "[Abyss]": {
+            "icon.foreground": "#eb53de",
+            "symbolIcon.textForeground": "#eccc3b",
+            "editor.lineHighlightBackground": "#102b53",
+            "editor.foreground": "#9b3492"
+        },
+    },
+    "editor.tokenColorCustomizations": {
+        "[Abyss]": {
+            "comments": "#5d5ec0",
+            "keywords": "#af108d",
+            "variables": "#FF0000",
+            "functions": "#459b88",
+        }
+    }
 }

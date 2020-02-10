@@ -24,4 +24,3 @@ with utils.OutSplit('multiple_xor') as out_split:
 
     for i in range(50):
         best_xor = evm.evolve_node_count(x, y, x, y, utils.jit_round_compare, population_count, population_size, node_cap, generations, target_accuracy, i*r+r)
-        print("Best Network Accuracy:", best_xor.validate(x, y, utils.jit_round_compare)*100, "%")
