@@ -1,3 +1,5 @@
+import networkx as nx
+import matplotlib.pyplot as plt
 import numpy as np
 import traceback
 import datetime
@@ -54,4 +56,22 @@ def jit_round_compare(output_layer, expected):
 
 @numba.jit
 def jit_near_compare(output_layer, expected):
-    return np.all((output_layer-expected)**2 < 0.1)
+    return np.all((output_layer-expected)**2 < 10**(-3))
+
+def display_network(network):
+    G = nx.Graph()
+    G.add_edges_from(network.connections)
+
+    print(G.nodes())
+    print(G.edges())
+
+    labels = {}
+    for i in range(network.input_shape):
+        labels[i] = "I #" + str(i)
+    for n, i in enumerate(range(network.node_count - network.output_shape, network.node_count)):
+        labels[i] = "O #" + str(n)
+
+    H = nx.relabel_nodes(G, labels)
+    nx.draw_networkx(H)
+    plt.savefig('{}_node_{}_connection_.png'.format(network.node_count, len(network.connections)))
+    plt.show()

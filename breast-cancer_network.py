@@ -16,16 +16,20 @@ y = np.array([float(item==b'B') for item in cancer_data['diagnosis']]).reshape(l
 
 with utils.OutSplit('breast-cancer'):
     population_count = 15
-    population_size = 20
-    node_cap = 300
+    population_size = 15
+    node_cap = 100
     generations = 50
-    target_accuracy = 0.95
-    r = 10
+    target_accuracy = 0.97
+    r = 4
 
     np.random.seed(r)
 
-    np.random.shuffle(x)
-    np.random.shuffle(y)
+    perm = np.random.permutation(len(x))
+    #np.random.shuffle(x)
+    #np.random.shuffle(y)
+
+    x = x[perm]
+    y = y[perm]
 
     val_x = x[-100:]
     val_y = y[-100:]
