@@ -49,3 +49,4 @@ with utils.OutSplit('breast-cancer'):
 
     best_network = evm.evolve_node_count(in_x, in_y, val_x, val_y, utils.jit_round_compare, population_count, population_size, node_cap, generations, target_accuracy, r)
     print(best_network.validate(cross_val_x, cross_val_y, utils.jit_round_compare))
+    utils.display_network(best_network, "wisconsin-breast-cancer")

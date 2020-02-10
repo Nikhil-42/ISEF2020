@@ -1,5 +1,6 @@
 import networkx as nx
 import matplotlib.pyplot as plt
+import pathlib
 import numpy as np
 import traceback
 import datetime
@@ -58,13 +59,14 @@ def jit_round_compare(output_layer, expected):
 def jit_near_compare(output_layer, expected):
     return np.all((output_layer-expected)**2 < 10**(-3))
 
-def display_network(network):
+def display_network(network, folder='default'):
+    save_network(network, folder)
+    plt.show()
+
+def save_network(network, folder='default'):
     G = nx.Graph()
     G.add_edges_from(network.connections)
-
-    print(G.nodes())
-    print(G.edges())
-
+    
     labels = {}
     for i in range(network.input_shape):
         labels[i] = "I #" + str(i)
@@ -73,5 +75,10 @@ def display_network(network):
 
     H = nx.relabel_nodes(G, labels)
     nx.draw_networkx(H)
-    plt.savefig('{}_node_{}_connection_.png'.format(network.node_count, len(network.connections)))
-    plt.show()
+
+    filepath = 'data/figures/' + folder + '/'
+    pathlib.Path(filepath).mkdir(parents=True, exist_ok=True)
+    filename = filepath + '{}_node_{}_connection_{d.year}.{d.month}.{d.day}_{d.hour}.{d.minute}.{d.second}'.format(network.node_count, len(network.connections),d=datetime.datetime.now()) + '.png'
+    
+    plt.savefig(filename)
+    return H

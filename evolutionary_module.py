@@ -257,3 +257,4 @@ if __name__ == "__main__":
         # print(fitness, accuracy, network.validate(x, y, utils.jit_round_compare))
         best_xor = evolve_node_count(x, y, x, y, utils.jit_round_compare, population_count=30, population_size=15, node_cap=50, generations=100, target_accuracy=1, r=2)
         best_xor.predict(np.array([[0, 1], [1, 1], [0, 0], [1, 0]]))
+        utils.display_network(best_xor, 'xor')

@@ -1,12 +1,7 @@
-import math
-import random
-import numpy as np
 import numba
+import numpy as np
 from numba import jitclass, jit, njit
 from numba import int32, int64, float32, float64, uint8
-import timeit
-
-import time
 
 # Activation Functions and Derivatives
 a = 0.01
@@ -31,7 +26,7 @@ def leaky_relu(x):
 
 @njit
 def sigmoid(x: float64) -> float64:
-    return 1/(1+math.exp(-x))
+    return 1/(1+np.exp(-x))
 
 @njit
 def d_relu(x: float64) -> float64:
@@ -43,7 +38,7 @@ def d_leaky_relu(x):
 
 @njit
 def d_sigmoid(x: float64) -> float64:
-    return 1/(1+math.exp(-x))
+    return 1/(1+np.exp(-x))
 
 network_spec = [
     ('input_shape', int32),
@@ -76,7 +71,7 @@ class JIT_Network:
             self.to[i, -1] = 0
             self.frm[i, -1] = 0
         self.deps = np.column_stack((np.zeros(shape=self.node_count, dtype=int32), np.full(shape=self.node_count, fill_value=self.node_count, dtype=int32)))
-        # Initalizing weights from -1 to 1 is more effective than setting them from 0 to 1
+        # Initializing weights from -1 to 1 is more effective than setting them from 0 to 1
         self.weights = (np.random.random((self.node_count, self.node_count)).astype(float64)*2-1)/self.node_count
         self.connections = {(int32(0), int32(0))}
         self.learning_rate = learning_rate
@@ -93,6 +88,14 @@ class JIT_Network:
         self.nodes[node_i, 0] = leaky_relu(p_activation + self.nodes[node_i, 2])
 
         return self.nodes[node_i, 0]
+
+    def activation_function(self, i):
+        if i == 0:
+            return relu
+        elif i == 1:
+            return leaky_relu
+        elif i == 2:
+            return sigmoid
     
     def get_backward_delta(self, node_i: int32) -> float64:
         p_error = 0.0
@@ -333,9 +336,9 @@ def run_xor_test():
     print("Training error: ", model.train(x, y, 1, 1000, 0.001))
     print("Validation accuracy: ", model.validate(x, y, nopython_round))
     print(model.predict(((1, 1), (1, 0), (0, 1), (0, 0))))
+    utils.display_network(model)
 
 if __name__ == '__main__':
-    # print(min(timeit.repeat(stmt='network.run_xor_test()', setup='gc.enable(); import network; ', repeat=10, number=1)))
     run_xor_test()
 
 # 100000000 loops, best of 3: 0.00701 usec per loop
