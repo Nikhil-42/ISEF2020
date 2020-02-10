@@ -1,0 +1,572 @@
+population_count: 15
+population_size: 15
+node_cap: 100
+generations: 50
+target_accuracy: 97.0%
+random_seed: 0
+Population: 0  Node Count: 76
+1.0503842089387526e-14 1.0503842089387526e-14
+Generation # 0  Max Fitness: 5.3776012748411005e-05
+New Best Fitness
+Generation # 1  Max Fitness: 0.00020258963422482666
+New Best Fitness
+Generation # 2  Max Fitness: 0.00020258963422482666
+Generation # 3  Max Fitness: 0.00020258963422482666
+Generation # 4  Max Fitness: 0.00020258963422482666
+Generation # 5  Max Fitness: 0.00020258963422482666
+Generation # 6  Max Fitness: 0.00020823229250063044
+New Best Fitness
+Generation # 7  Max Fitness: 0.00020823229250063044
+Generation # 8  Max Fitness: 0.00020823229250063044
+Generation # 9  Max Fitness: 0.000253025324628697
+New Best Fitness
+Generation # 10  Max Fitness: 0.000253025324628697
+Generation # 11  Max Fitness: 0.000253025324628697
+Generation # 12  Max Fitness: 0.000253025324628697
+Generation # 13  Max Fitness: 0.0002576510161209949
+New Best Fitness
+Generation # 14  Max Fitness: 0.0002576510161209949
+Generation # 15  Max Fitness: 0.0002576510161209949
+Generation # 16  Max Fitness: 0.0002576510161209949
+Generation # 17  Max Fitness: 0.00032100075007368653
+New Best Fitness
+Generation # 18  Max Fitness: 0.0004482834459442973
+New Best Fitness
+Generation # 19  Max Fitness: 0.00047786091041897256
+New Best Fitness
+Generation # 20  Max Fitness: 0.00047786091041897256
+Generation # 21  Max Fitness: 0.00047786091041897256
+Generation # 22  Max Fitness: 0.00047786091041897256
+Generation # 23  Max Fitness: 0.00047786091041897256
+Generation # 24  Max Fitness: 0.00047786091041897256
+Generation # 25  Max Fitness: 0.00047786091041897256
+Generation # 26  Max Fitness: 0.00047786091041897256
+Generation # 27  Max Fitness: 0.00047786091041897256
+Generation # 28  Max Fitness: 0.00047786091041897256
+Generation # 29  Max Fitness: 0.00047786091041897256
+Generation # 30  Max Fitness: 0.00047786091041897256
+Generation # 31  Max Fitness: 0.00047786091041897256
+Generation # 32  Max Fitness: 0.00047786091041897256
+Generation # 33  Max Fitness: 0.00047786091041897256
+Generation # 34  Max Fitness: 0.00047786091041897256
+Generation # 35  Max Fitness: 0.00047786091041897256
+Generation # 36  Max Fitness: 0.00048587534916813774
+New Best Fitness
+Generation # 37  Max Fitness: 0.0004891364032823199
+New Best Fitness
+Generation # 38  Max Fitness: 0.0004891364032823199
+Generation # 39  Max Fitness: 0.00048587534916813774
+Generation # 40  Max Fitness: 0.00048587534916813774
+Generation # 41  Max Fitness: 0.00048689609570000354
+Generation # 42  Max Fitness: 0.00048587534916813774
+Generation # 43  Max Fitness: 0.00048587534916813774
+Generation # 44  Max Fitness: 0.00048587534916813774
+Generation # 45  Max Fitness: 0.00048587534916813774
+Generation # 46  Max Fitness: 0.0004720214695584556
+Generation # 47  Max Fitness: 0.0004720214695584556
+Generation # 48  Max Fitness: 0.0004720214695584556
+Generation # 49  Max Fitness: 0.0004720214695584556
+Accuracy:  99.0 %
+Replaced  0.0  with  0.0004891364032823199
+32 <= node_count < 76
+Population: 1  Node Count: 68
+2.4331843992052613e-13 2.4331843992052613e-13
+Generation # 0  Max Fitness: 1.4258247042691948e-05
+New Best Fitness
+Generation # 1  Max Fitness: 1.4258247042691948e-05
+Generation # 2  Max Fitness: 5.5615183506836715e-05
+New Best Fitness
+Generation # 3  Max Fitness: 5.5615183506836715e-05
+Generation # 4  Max Fitness: 5.779164994470828e-05
+New Best Fitness
+Generation # 5  Max Fitness: 5.779164994470828e-05
+Generation # 6  Max Fitness: 5.779164994470828e-05
+Generation # 7  Max Fitness: 5.779164994470828e-05
+Generation # 8  Max Fitness: 5.779164994470828e-05
+Generation # 9  Max Fitness: 5.779164994470828e-05
+Generation # 10  Max Fitness: 5.779164994470828e-05
+Generation # 11  Max Fitness: 0.00018540507214100972
+New Best Fitness
+Generation # 12  Max Fitness: 0.00018540507214100972
+Generation # 13  Max Fitness: 0.00018540507214100972
+Generation # 14  Max Fitness: 0.00019507597754329784
+New Best Fitness
+Generation # 15  Max Fitness: 0.00019507597754329784
+Generation # 16  Max Fitness: 0.00019507597754329784
+Generation # 17  Max Fitness: 0.00019507597754329784
+Generation # 18  Max Fitness: 0.00019507597754329784
+Generation # 19  Max Fitness: 0.0002665905925286209
+New Best Fitness
+Generation # 20  Max Fitness: 0.0006238947593055514
+New Best Fitness
+Generation # 21  Max Fitness: 0.0006238947593055514
+Generation # 22  Max Fitness: 0.0006238947593055514
+Generation # 23  Max Fitness: 0.0006238947593055514
+Generation # 24  Max Fitness: 0.0006238947593055514
+Generation # 25  Max Fitness: 0.0006238947593055514
+Generation # 26  Max Fitness: 0.0006238947593055514
+Generation # 27  Max Fitness: 0.0006238947593055514
+Generation # 28  Max Fitness: 0.0006238947593055514
+Generation # 29  Max Fitness: 0.0006238947593055514
+Generation # 30  Max Fitness: 0.0006238947593055514
+Generation # 31  Max Fitness: 0.0006238947593055514
+Generation # 32  Max Fitness: 0.0006238947593055514
+Generation # 33  Max Fitness: 0.0006238947593055514
+Generation # 34  Max Fitness: 0.0006238947593055514
+Generation # 35  Max Fitness: 0.0006238947593055514
+Generation # 36  Max Fitness: 0.0006238947593055514
+Generation # 37  Max Fitness: 0.0006238947593055514
+Generation # 38  Max Fitness: 0.0006238947593055514
+Generation # 39  Max Fitness: 0.0006238947593055514
+Generation # 40  Max Fitness: 0.0006238947593055514
+Generation # 41  Max Fitness: 0.0006238947593055514
+Generation # 42  Max Fitness: 0.0006238947593055514
+Generation # 43  Max Fitness: 0.0006238947593055514
+Generation # 44  Max Fitness: 0.0006238947593055514
+Generation # 45  Max Fitness: 0.0007108535421291129
+New Best Fitness
+Generation # 46  Max Fitness: 0.0007108535421291129
+Generation # 47  Max Fitness: 0.0007108535421291129
+Generation # 48  Max Fitness: 0.0007108535421291129
+Generation # 49  Max Fitness: 0.0007108535421291129
+Accuracy:  99.0 %
+Replaced  0.0004891364032823199  with  0.0007108535421291129
+32 <= node_count < 68
+Population: 2  Node Count: 47
+2.103610866065126e-10 2.103610866065126e-10
+Generation # 0  Max Fitness: 0.0002399477410948512
+New Best Fitness
+Generation # 1  Max Fitness: 0.0004771448764424009
+New Best Fitness
+Generation # 2  Max Fitness: 0.0007542045501458034
+New Best Fitness
+Generation # 3  Max Fitness: 0.0007542045501458034
+Generation # 4  Max Fitness: 0.0007542045501458034
+Generation # 5  Max Fitness: 0.0009558324847108885
+New Best Fitness
+Generation # 6  Max Fitness: 0.0009558324847108885
+Generation # 7  Max Fitness: 0.0009558324847108885
+Generation # 8  Max Fitness: 0.0021047816205228
+New Best Fitness
+Generation # 9  Max Fitness: 0.0021047816205228
+Generation # 10  Max Fitness: 0.0021047816205228
+Generation # 11  Max Fitness: 0.0021047816205228
+Generation # 12  Max Fitness: 0.0021047816205228
+Generation # 13  Max Fitness: 0.0021047816205228
+Generation # 14  Max Fitness: 0.0021047816205228
+Generation # 15  Max Fitness: 0.0021047816205228
+Generation # 16  Max Fitness: 0.0021361027755901034
+New Best Fitness
+Generation # 17  Max Fitness: 0.0021361027755901034
+Generation # 18  Max Fitness: 0.0021361027755901034
+Generation # 19  Max Fitness: 0.0021361027755901034
+Generation # 20  Max Fitness: 0.0021361027755901034
+Generation # 21  Max Fitness: 0.0024813895781637717
+New Best Fitness
+Generation # 22  Max Fitness: 0.0024813895781637717
+Generation # 23  Max Fitness: 0.0024813895781637717
+Generation # 24  Max Fitness: 0.0024813895781637717
+Generation # 25  Max Fitness: 0.0024813895781637717
+Generation # 26  Max Fitness: 0.0024813895781637717
+Generation # 27  Max Fitness: 0.0024813895781637717
+Generation # 28  Max Fitness: 0.0024813895781637717
+Generation # 29  Max Fitness: 0.0024813895781637717
+Generation # 30  Max Fitness: 0.0024813895781637717
+Generation # 31  Max Fitness: 0.0024813895781637717
+Generation # 32  Max Fitness: 0.0024813895781637717
+Generation # 33  Max Fitness: 0.0024813895781637717
+Generation # 34  Max Fitness: 0.002932551319648094
+New Best Fitness
+Generation # 35  Max Fitness: 0.002932551319648094
+Generation # 36  Max Fitness: 0.002932551319648094
+Generation # 37  Max Fitness: 0.002932551319648094
+Generation # 38  Max Fitness: 0.002932551319648094
+Generation # 39  Max Fitness: 0.002932551319648094
+Generation # 40  Max Fitness: 0.002932551319648094
+Generation # 41  Max Fitness: 0.002932551319648094
+Generation # 42  Max Fitness: 0.002932551319648094
+Generation # 43  Max Fitness: 0.002932551319648094
+Generation # 44  Max Fitness: 0.002932551319648094
+Generation # 45  Max Fitness: 0.002932551319648094
+Generation # 46  Max Fitness: 0.002932551319648094
+Generation # 47  Max Fitness: 0.002932551319648094
+Generation # 48  Max Fitness: 0.002932551319648094
+Generation # 49  Max Fitness: 0.002932551319648094
+Accuracy:  100.0 %
+Replaced  0.0007108535421291129  with  0.002932551319648094
+32 <= node_count < 47
+Population: 3  Node Count: 40
+1.5568585895826283e-09 1.5568585895826283e-09
+Generation # 0  Max Fitness: 0.0011405518698296695
+New Best Fitness
+Generation # 1  Max Fitness: 0.0029270588944756027
+New Best Fitness
+Generation # 2  Max Fitness: 0.0029270588944756027
+Generation # 3  Max Fitness: 0.0029270588944756027
+Generation # 4  Max Fitness: 0.0029270588944756027
+Generation # 5  Max Fitness: 0.0008274997847175208
+Generation # 6  Max Fitness: 0.0008274997847175208
+Generation # 7  Max Fitness: 0.0008274997847175208
+Generation # 8  Max Fitness: 0.0008274997847175208
+Generation # 9  Max Fitness: 0.0008274997847175208
+Generation # 10  Max Fitness: 0.0008274997847175208
+Generation # 11  Max Fitness: 0.0013604520519940081
+Generation # 12  Max Fitness: 0.0021449463009540564
+Generation # 13  Max Fitness: 0.0021449463009540564
+Generation # 14  Max Fitness: 0.0021449463009540564
+Generation # 15  Max Fitness: 0.0021449463009540564
+Generation # 16  Max Fitness: 0.0021449463009540564
+Generation # 17  Max Fitness: 0.0021449463009540564
+Generation # 18  Max Fitness: 0.0021449463009540564
+Generation # 19  Max Fitness: 0.0021449463009540564
+Generation # 20  Max Fitness: 0.0021449463009540564
+Generation # 21  Max Fitness: 0.0021449463009540564
+Generation # 22  Max Fitness: 0.0021449463009540564
+Generation # 23  Max Fitness: 0.0021449463009540564
+Generation # 24  Max Fitness: 0.0021449463009540564
+Generation # 25  Max Fitness: 0.0024794741790110757
+Generation # 26  Max Fitness: 0.0024794741790110757
+Generation # 27  Max Fitness: 0.0024794741790110757
+Generation # 28  Max Fitness: 0.0024794741790110757
+Generation # 29  Max Fitness: 0.002525390367511281
+Generation # 30  Max Fitness: 0.002525390367511281
+Generation # 31  Max Fitness: 0.002525390367511281
+Generation # 32  Max Fitness: 0.002525390367511281
+Generation # 33  Max Fitness: 0.002525390367511281
+Generation # 34  Max Fitness: 0.002525390367511281
+Generation # 35  Max Fitness: 0.002525390367511281
+Generation # 36  Max Fitness: 0.002525390367511281
+Generation # 37  Max Fitness: 0.002525390367511281
+Generation # 38  Max Fitness: 0.002525390367511281
+Generation # 39  Max Fitness: 0.002525390367511281
+Generation # 40  Max Fitness: 0.002525390367511281
+Generation # 41  Max Fitness: 0.002525390367511281
+Generation # 42  Max Fitness: 0.002525390367511281
+Generation # 43  Max Fitness: 0.004629629629629629
+New Best Fitness
+Generation # 44  Max Fitness: 0.004629629629629629
+Generation # 45  Max Fitness: 0.004629629629629629
+Generation # 46  Max Fitness: 0.004629629629629629
+Generation # 47  Max Fitness: 0.004629629629629629
+Generation # 48  Max Fitness: 0.004629629629629629
+Generation # 49  Max Fitness: 0.004629629629629629
+Accuracy:  100.0 %
+Replaced  0.002932551319648094  with  0.004629629629629629
+32 <= node_count < 40
+Population: 4  Node Count: 33
+3.339168715193156e-08 3.339168715193156e-08
+Generation # 0  Max Fitness: 0.005409068352765963
+New Best Fitness
+Generation # 1  Max Fitness: 0.007750591013698303
+New Best Fitness
+Generation # 2  Max Fitness: 0.007750591013698303
+Generation # 3  Max Fitness: 0.007750591013698303
+Generation # 4  Max Fitness: 0.007750591013698303
+Generation # 5  Max Fitness: 0.007750591013698303
+Generation # 6  Max Fitness: 0.012242309840452452
+New Best Fitness
+Generation # 7  Max Fitness: 0.012242309840452452
+Generation # 8  Max Fitness: 0.012242309840452452
+Generation # 9  Max Fitness: 0.012242309840452452
+Generation # 10  Max Fitness: 0.013777295621986147
+New Best Fitness
+Generation # 11  Max Fitness: 0.013777295621986147
+Generation # 12  Max Fitness: 0.013777295621986147
+Generation # 13  Max Fitness: 0.013777295621986147
+Generation # 14  Max Fitness: 0.013777295621986147
+Generation # 15  Max Fitness: 0.012242309840452452
+Generation # 16  Max Fitness: 0.018873561004030863
+New Best Fitness
+Generation # 17  Max Fitness: 0.018873561004030863
+Generation # 18  Max Fitness: 0.043920015744290386
+New Best Fitness
+Generation # 19  Max Fitness: 0.043920015744290386
+Generation # 20  Max Fitness: 0.043920015744290386
+Generation # 21  Max Fitness: 0.047619047619047616
+New Best Fitness
+Generation # 22  Max Fitness: 0.047619047619047616
+Generation # 23  Max Fitness: 0.047619047619047616
+Generation # 24  Max Fitness: 0.047619047619047616
+Generation # 25  Max Fitness: 0.047619047619047616
+Generation # 26  Max Fitness: 0.047619047619047616
+Generation # 27  Max Fitness: 0.047619047619047616
+Generation # 28  Max Fitness: 0.047619047619047616
+Generation # 29  Max Fitness: 0.047619047619047616
+Generation # 30  Max Fitness: 0.047619047619047616
+Generation # 31  Max Fitness: 0.047619047619047616
+Generation # 32  Max Fitness: 0.07549424401612345
+New Best Fitness
+Generation # 33  Max Fitness: 0.07549424401612345
+Generation # 34  Max Fitness: 0.09856590586388642
+New Best Fitness
+Generation # 35  Max Fitness: 0.09856590586388642
+Generation # 36  Max Fitness: 0.09856590586388642
+Generation # 37  Max Fitness: 0.09856590586388642
+Generation # 38  Max Fitness: 0.09856590586388642
+Generation # 39  Max Fitness: 0.09856590586388642
+Generation # 40  Max Fitness: 0.09856590586388642
+Generation # 41  Max Fitness: 0.09856590586388642
+Generation # 42  Max Fitness: 0.09856590586388642
+Generation # 43  Max Fitness: 0.09856590586388642
+Generation # 44  Max Fitness: 0.09856590586388642
+Generation # 45  Max Fitness: 0.09856590586388642
+Generation # 46  Max Fitness: 0.09856590586388642
+Generation # 47  Max Fitness: 0.09856590586388642
+Generation # 48  Max Fitness: 0.09856590586388642
+Generation # 49  Max Fitness: 0.09856590586388642
+Accuracy:  98.0 %
+Replaced  0.004629629629629629  with  0.09856590586388642
+32 <= node_count < 33
+Population: 5  Node Count: 32
+4.238175676975929e-08 4.238175676975929e-08
+Generation # 0  Max Fitness: 0.019713181172777282
+New Best Fitness
+Generation # 1  Max Fitness: 0.019713181172777282
+Generation # 2  Max Fitness: 0.019713181172777282
+Generation # 3  Max Fitness: 0.019713181172777282
+Generation # 4  Max Fitness: 0.019713181172777282
+Generation # 5  Max Fitness: 0.019713181172777282
+Generation # 6  Max Fitness: 0.019713181172777282
+Generation # 7  Max Fitness: 0.019713181172777282
+Generation # 8  Max Fitness: 0.019713181172777282
+Generation # 9  Max Fitness: 0.019713181172777282
+Generation # 10  Max Fitness: 0.025016941131542576
+New Best Fitness
+Generation # 11  Max Fitness: 0.025016941131542576
+Generation # 12  Max Fitness: 0.025016941131542576
+Generation # 13  Max Fitness: 0.025016941131542576
+Generation # 14  Max Fitness: 0.025668104860171834
+New Best Fitness
+Generation # 15  Max Fitness: 0.025668104860171834
+Generation # 16  Max Fitness: 0.025668104860171834
+Generation # 17  Max Fitness: 0.025668104860171834
+Generation # 18  Max Fitness: 0.025668104860171834
+Generation # 19  Max Fitness: 0.025668104860171834
+Generation # 20  Max Fitness: 0.025668104860171834
+Generation # 21  Max Fitness: 0.025668104860171834
+Generation # 22  Max Fitness: 0.025668104860171834
+Generation # 23  Max Fitness: 0.025016941131542576
+Generation # 24  Max Fitness: 0.025016941131542576
+Generation # 25  Max Fitness: 0.025016941131542576
+Generation # 26  Max Fitness: 0.025016941131542576
+Generation # 27  Max Fitness: 0.025016941131542576
+Generation # 28  Max Fitness: 0.025016941131542576
+Generation # 29  Max Fitness: 0.025016941131542576
+Generation # 30  Max Fitness: 0.025016941131542576
+Generation # 31  Max Fitness: 0.025016941131542576
+Generation # 32  Max Fitness: 0.03348013677413717
+New Best Fitness
+Generation # 33  Max Fitness: 0.03208513107521479
+Generation # 34  Max Fitness: 0.03208513107521479
+Generation # 35  Max Fitness: 0.03208513107521479
+Generation # 36  Max Fitness: 0.03208513107521479
+Generation # 37  Max Fitness: 0.03208513107521479
+Generation # 38  Max Fitness: 0.03208513107521479
+Generation # 39  Max Fitness: 0.03208513107521479
+Generation # 40  Max Fitness: 0.03208513107521479
+Generation # 41  Max Fitness: 0.03208513107521479
+Generation # 42  Max Fitness: 0.03208513107521479
+Generation # 43  Max Fitness: 0.03208513107521479
+Generation # 44  Max Fitness: 0.03208513107521479
+Generation # 45  Max Fitness: 0.03208513107521479
+Generation # 46  Max Fitness: 0.03208513107521479
+Generation # 47  Max Fitness: 0.03208513107521479
+Generation # 48  Max Fitness: 0.03208513107521479
+Generation # 49  Max Fitness: 0.03208513107521479
+Accuracy:  99.0 %
+24 <= node_count < 33
+Population: 6  Node Count: 26
+2.3345882966392834e-07 2.3345882966392834e-07
+Generation # 0  Max Fitness: 0.01357977167041645
+New Best Fitness
+Generation # 1  Max Fitness: 0.0138694786560917
+New Best Fitness
+Generation # 2  Max Fitness: 0.0138694786560917
+Generation # 3  Max Fitness: 0.0138694786560917
+Generation # 4  Max Fitness: 0.0138694786560917
+Generation # 5  Max Fitness: 0.0138694786560917
+Generation # 6  Max Fitness: 0.0138694786560917
+Generation # 7  Max Fitness: 0.0271595433408329
+New Best Fitness
+Generation # 8  Max Fitness: 0.04145476226743168
+New Best Fitness
+Generation # 9  Max Fitness: 0.04145476226743168
+Generation # 10  Max Fitness: 0.04145476226743168
+Generation # 11  Max Fitness: 0.04145476226743168
+Generation # 12  Max Fitness: 0.04145476226743168
+Generation # 13  Max Fitness: 0.04145476226743168
+Generation # 14  Max Fitness: 0.1005774549631494
+New Best Fitness
+Generation # 15  Max Fitness: 0.1005774549631494
+Generation # 16  Max Fitness: 0.1005774549631494
+Generation # 17  Max Fitness: 0.1005774549631494
+Generation # 18  Max Fitness: 0.05322753432243101
+Generation # 19  Max Fitness: 0.05322753432243101
+Generation # 20  Max Fitness: 0.05322753432243101
+Generation # 21  Max Fitness: 0.05486042997989968
+Generation # 22  Max Fitness: 0.05486042997989968
+Generation # 23  Max Fitness: 0.05486042997989968
+Generation # 24  Max Fitness: 0.06218214340114752
+Generation # 25  Max Fitness: 0.06218214340114752
+Generation # 26  Max Fitness: 0.06218214340114752
+Generation # 27  Max Fitness: 0.06218214340114752
+Generation # 28  Max Fitness: 0.05486042997989968
+Generation # 29  Max Fitness: 0.05486042997989968
+Generation # 30  Max Fitness: 0.05486042997989968
+Generation # 31  Max Fitness: 0.05486042997989968
+Generation # 32  Max Fitness: 0.05322753432243101
+Generation # 33  Max Fitness: 0.05322753432243101
+Generation # 34  Max Fitness: 0.05322753432243101
+Generation # 35  Max Fitness: 0.0778291175423953
+Generation # 36  Max Fitness: 0.0778291175423953
+Generation # 37  Max Fitness: 0.0778291175423953
+Generation # 38  Max Fitness: 0.0778291175423953
+Generation # 39  Max Fitness: 0.0778291175423953
+Generation # 40  Max Fitness: 0.0778291175423953
+Generation # 41  Max Fitness: 0.0778291175423953
+Generation # 42  Max Fitness: 0.0778291175423953
+Generation # 43  Max Fitness: 0.07207934337160365
+Generation # 44  Max Fitness: 0.07207934337160365
+Generation # 45  Max Fitness: 0.06006611947633638
+Generation # 46  Max Fitness: 0.06218214340114752
+Generation # 47  Max Fitness: 0.06218214340114752
+Generation # 48  Max Fitness: 0.06218214340114752
+Generation # 49  Max Fitness: 0.06218214340114752
+Accuracy:  98.0 %
+Replaced  0.09856590586388642  with  0.1005774549631494
+24 <= node_count < 26
+Population: 7  Node Count: 25
+1.6978823975558426e-07 1.6978823975558426e-07
+Generation # 0  Max Fitness: 0.009256962490857567
+New Best Fitness
+Generation # 1  Max Fitness: 0.011305844254754095
+New Best Fitness
+Generation # 2  Max Fitness: 0.015207866949266003
+New Best Fitness
+Generation # 3  Max Fitness: 0.01196496646153089
+Generation # 4  Max Fitness: 0.01196496646153089
+Generation # 5  Max Fitness: 0.020369657505624677
+New Best Fitness
+Generation # 6  Max Fitness: 0.020369657505624677
+Generation # 7  Max Fitness: 0.020369657505624677
+Generation # 8  Max Fitness: 0.020369657505624677
+Generation # 9  Max Fitness: 0.05322753432243101
+New Best Fitness
+Generation # 10  Max Fitness: 0.06218214340114752
+New Best Fitness
+Generation # 11  Max Fitness: 0.06218214340114752
+Generation # 12  Max Fitness: 0.06218214340114752
+Generation # 13  Max Fitness: 0.06218214340114752
+Generation # 14  Max Fitness: 0.08147863002249871
+New Best Fitness
+Generation # 15  Max Fitness: 0.08147863002249871
+Generation # 16  Max Fitness: 0.08147863002249871
+Generation # 17  Max Fitness: 0.08147863002249871
+Generation # 18  Max Fitness: 0.10645506864486202
+New Best Fitness
+Generation # 19  Max Fitness: 0.10645506864486202
+Generation # 20  Max Fitness: 0.10645506864486202
+Generation # 21  Max Fitness: 0.10645506864486202
+Generation # 22  Max Fitness: 0.10645506864486202
+Generation # 23  Max Fitness: 0.10645506864486202
+Generation # 24  Max Fitness: 0.10645506864486202
+Generation # 25  Max Fitness: 0.10645506864486202
+Generation # 26  Max Fitness: 0.10645506864486202
+Generation # 27  Max Fitness: 0.10645506864486202
+Generation # 28  Max Fitness: 0.10645506864486202
+Generation # 29  Max Fitness: 0.10645506864486202
+Generation # 30  Max Fitness: 0.10645506864486202
+Generation # 31  Max Fitness: 0.10645506864486202
+Generation # 32  Max Fitness: 0.10645506864486202
+Generation # 33  Max Fitness: 0.10645506864486202
+Generation # 34  Max Fitness: 0.10645506864486202
+Generation # 35  Max Fitness: 0.10645506864486202
+Generation # 36  Max Fitness: 0.10645506864486202
+Generation # 37  Max Fitness: 0.10645506864486202
+Generation # 38  Max Fitness: 0.10645506864486202
+Generation # 39  Max Fitness: 0.10645506864486202
+Generation # 40  Max Fitness: 0.10645506864486202
+Generation # 41  Max Fitness: 0.10645506864486202
+Generation # 42  Max Fitness: 0.10645506864486202
+Generation # 43  Max Fitness: 0.10645506864486202
+Generation # 44  Max Fitness: 0.10645506864486202
+Generation # 45  Max Fitness: 0.10645506864486202
+Generation # 46  Max Fitness: 0.10645506864486202
+Generation # 47  Max Fitness: 0.10645506864486202
+Generation # 48  Max Fitness: 0.10645506864486202
+Generation # 49  Max Fitness: 0.10645506864486202
+Accuracy:  94.0 %
+25 <= node_count < 26
+Population: 8  Node Count: 25
+2.0410046566186323e-08 2.0410046566186323e-08
+Generation # 0  Max Fitness: 0.01629572600449974
+New Best Fitness
+Generation # 1  Max Fitness: 0.01629572600449974
+Generation # 2  Max Fitness: 0.01629572600449974
+Generation # 3  Max Fitness: 0.01629572600449974
+Generation # 4  Max Fitness: 0.039627081874547714
+New Best Fitness
+Generation # 5  Max Fitness: 0.04258202745794481
+New Best Fitness
+Generation # 6  Max Fitness: 0.04258202745794481
+Generation # 7  Max Fitness: 0.0543190866816658
+New Best Fitness
+Generation # 8  Max Fitness: 0.0543190866816658
+Generation # 9  Max Fitness: 0.0543190866816658
+Generation # 10  Max Fitness: 0.07097004576324135
+New Best Fitness
+Generation # 11  Max Fitness: 0.10645506864486202
+New Best Fitness
+Generation # 12  Max Fitness: 0.10645506864486202
+Generation # 13  Max Fitness: 0.10645506864486202
+Generation # 14  Max Fitness: 0.10645506864486202
+Generation # 15  Max Fitness: 0.10645506864486202
+Generation # 16  Max Fitness: 0.10645506864486202
+Generation # 17  Max Fitness: 0.10645506864486202
+Generation # 18  Max Fitness: 0.10645506864486202
+Generation # 19  Max Fitness: 0.10645506864486202
+Generation # 20  Max Fitness: 0.10645506864486202
+Generation # 21  Max Fitness: 0.10645506864486202
+Generation # 22  Max Fitness: 0.10645506864486202
+Generation # 23  Max Fitness: 0.10645506864486202
+Generation # 24  Max Fitness: 0.10645506864486202
+Generation # 25  Max Fitness: 0.10645506864486202
+Generation # 26  Max Fitness: 0.10645506864486202
+Generation # 27  Max Fitness: 0.10645506864486202
+Generation # 28  Max Fitness: 0.10645506864486202
+Generation # 29  Max Fitness: 0.10645506864486202
+Generation # 30  Max Fitness: 0.10645506864486202
+Generation # 31  Max Fitness: 0.10645506864486202
+Generation # 32  Max Fitness: 0.10645506864486202
+Generation # 33  Max Fitness: 0.10645506864486202
+Generation # 34  Max Fitness: 0.10645506864486202
+Generation # 35  Max Fitness: 0.10645506864486202
+Generation # 36  Max Fitness: 0.10645506864486202
+Generation # 37  Max Fitness: 0.10645506864486202
+Generation # 38  Max Fitness: 0.10645506864486202
+Generation # 39  Max Fitness: 0.10645506864486202
+Generation # 40  Max Fitness: 0.10645506864486202
+Generation # 41  Max Fitness: 0.10645506864486202
+Generation # 42  Max Fitness: 0.10645506864486202
+Generation # 43  Max Fitness: 0.10645506864486202
+Generation # 44  Max Fitness: 0.10645506864486202
+Generation # 45  Max Fitness: 0.10645506864486202
+Generation # 46  Max Fitness: 0.10645506864486202
+Generation # 47  Max Fitness: 0.10645506864486202
+Generation # 48  Max Fitness: 0.10645506864486202
+Generation # 49  Max Fitness: 0.10645506864486202
+Accuracy:  94.0 %
+26 <= node_count < 26
+Node Count: 31
+30
+1
+Weighted Connections:
+(30, 11) : 0.411809289413242
+(30, 2) : -0.09756957951460157
+(30, 23) : -0.37019054989818384
+(30, 7) : -0.6012489011527558
+(30, 24) : 0.2500914753512517
+(30, 6) : -0.7409502326471823
+Biases: [0.47245392623521554, 0.6908076574630023, 0.07639576210775248, 0.5113528718090703, 0.8688980741690487, 0.7231902094488387, 0.1015889603244314, 0.26148085778079194, 0.6834536550874483, 0.6272444671735993, 0.5151353922144932, 0.8144768342406852, 0.9727729261880351, 0.33470182408482785, 0.8274293934545806, 0.9204271142659649, 0.4939903179267332, 0.2585586340994118, 0.11007308563151619, 0.7342502913284711, 0.273308972616254, 0.8601988302877404, 0.07264119069694253, 0.4465541450923015, 0.49178067733622904, 0.1862022231124978, 0.1446945922124797, 0.3915683594780881, 0.7610911047326929, 0.8770590791979175, 0.7362270322613362]
+Best Accuracy: 98.0 %
+0.88
