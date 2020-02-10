@@ -76,7 +76,8 @@ class JIT_Network:
             self.to[i, -1] = 0
             self.frm[i, -1] = 0
         self.deps = np.column_stack((np.zeros(shape=self.node_count, dtype=int32), np.full(shape=self.node_count, fill_value=self.node_count, dtype=int32)))
-        self.weights = np.random.random((self.node_count, self.node_count)).astype(float64)/self.node_count
+        # Initalizing weights from -1 to 1 is more effective than setting them from 0 to 1
+        self.weights = (np.random.random((self.node_count, self.node_count)).astype(float64)*2-1)/self.node_count
         self.connections = {(int32(0), int32(0))}
         self.learning_rate = learning_rate
         self.id = id_num

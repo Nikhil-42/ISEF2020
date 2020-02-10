@@ -20,7 +20,7 @@ with utils.OutSplit('breast-cancer'):
     node_cap = 100
     generations = 50
     target_accuracy = 0.97
-    r = 4
+    r = 0
 
     np.random.seed(r)
 
@@ -34,8 +34,11 @@ with utils.OutSplit('breast-cancer'):
     val_x = x[-100:]
     val_y = y[-100:]
 
-    x = x[:-100]
-    y = y[:-100]
+    in_x = x[:-200]
+    in_y = y[:-200]
+    
+    cross_val_x = x[-200:-100]
+    cross_val_y = y[-200:-100]
 
     print('population_count: ' + str(population_count))
     print('population_size: ' + str(population_size))
@@ -44,4 +47,5 @@ with utils.OutSplit('breast-cancer'):
     print('target_accuracy: {}%'.format(target_accuracy*100))
     print('random_seed: ' + str(r))
 
-    best_network = evm.evolve_node_count(x, y, val_x, val_y, utils.jit_round_compare, population_count, population_size, node_cap, generations, target_accuracy, r)
+    best_network = evm.evolve_node_count(in_x, in_y, val_x, val_y, utils.jit_round_compare, population_count, population_size, node_cap, generations, target_accuracy, r)
+    print(best_network.validate(cross_val_x, cross_val_y, utils.jit_round_compare))

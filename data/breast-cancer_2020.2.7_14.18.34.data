@@ -1,0 +1,1935 @@
+population_count: 15
+population_size: 15
+node_cap: 100
+generations: 50
+target_accuracy: 97.0%
+random_seed: 4
+Population: 0  Node Count: 78
+5.415598315692667e-13 5.415598315692667e-13
+Generation # 0  Max Fitness: 1.4580996943036096e-05
+New Best Fitness
+Generation # 1  Max Fitness: 1.4580996943036096e-05
+Generation # 2  Max Fitness: 4.855322528146243e-05
+New Best Fitness
+Generation # 3  Max Fitness: 5.007051357150813e-05
+New Best Fitness
+Generation # 4  Max Fitness: 6.755606695323941e-05
+New Best Fitness
+Generation # 5  Max Fitness: 6.755606695323941e-05
+Generation # 6  Max Fitness: 6.755606695323941e-05
+Generation # 7  Max Fitness: 0.00010122525606849514
+New Best Fitness
+Generation # 8  Max Fitness: 0.00010122525606849514
+Generation # 9  Max Fitness: 0.00016905594739936744
+New Best Fitness
+Generation # 10  Max Fitness: 0.00016905594739936744
+Generation # 11  Max Fitness: 0.00016905594739936744
+Generation # 12  Max Fitness: 0.00016905594739936744
+Generation # 13  Max Fitness: 0.00016905594739936744
+Generation # 14  Max Fitness: 0.00016905594739936744
+Generation # 15  Max Fitness: 0.00016905594739936744
+Generation # 16  Max Fitness: 0.00016905594739936744
+Generation # 17  Max Fitness: 0.00016905594739936744
+Generation # 18  Max Fitness: 0.00016905594739936744
+Generation # 19  Max Fitness: 0.00016905594739936744
+Generation # 20  Max Fitness: 0.00016905594739936744
+Generation # 21  Max Fitness: 0.00016905594739936744
+Generation # 22  Max Fitness: 0.00016905594739936744
+Generation # 23  Max Fitness: 0.00016905594739936744
+Generation # 24  Max Fitness: 0.00016905594739936744
+Generation # 25  Max Fitness: 0.00013215211260965158
+Generation # 26  Max Fitness: 0.00013215211260965158
+Generation # 27  Max Fitness: 0.00013215211260965158
+Generation # 28  Max Fitness: 0.00013215211260965158
+Generation # 29  Max Fitness: 0.00013215211260965158
+Generation # 30  Max Fitness: 0.00013215211260965158
+Generation # 31  Max Fitness: 0.00013215211260965158
+Generation # 32  Max Fitness: 0.00013215211260965158
+Generation # 33  Max Fitness: 0.00013215211260965158
+Generation # 34  Max Fitness: 0.00013215211260965158
+Generation # 35  Max Fitness: 0.00013215211260965158
+Generation # 36  Max Fitness: 0.00013215211260965158
+Generation # 37  Max Fitness: 0.0001232472390717969
+Generation # 38  Max Fitness: 0.0001232472390717969
+Generation # 39  Max Fitness: 0.0001232472390717969
+Generation # 40  Max Fitness: 0.00010624657654990864
+Generation # 41  Max Fitness: 0.0001325596750232511
+Generation # 42  Max Fitness: 0.0001325596750232511
+Generation # 43  Max Fitness: 0.0001325596750232511
+Generation # 44  Max Fitness: 0.0001325596750232511
+Generation # 45  Max Fitness: 0.0001325596750232511
+Generation # 46  Max Fitness: 0.0001325596750232511
+Generation # 47  Max Fitness: 0.0001325596750232511
+Generation # 48  Max Fitness: 0.0001325596750232511
+Generation # 49  Max Fitness: 0.0001325596750232511
+Accuracy:  96.47058823529412 %
+Replaced  0.0  with  0.00016905594739936744
+56 <= node_count < 100
+Population: 1  Node Count: 65
+1.340911764292571e-09 1.340911764292571e-09
+Generation # 0  Max Fitness: 4.323187780302016e-05
+New Best Fitness
+Generation # 1  Max Fitness: 4.323187780302016e-05
+Generation # 2  Max Fitness: 4.323187780302016e-05
+Generation # 3  Max Fitness: 8.281495214954474e-05
+New Best Fitness
+Generation # 4  Max Fitness: 8.281495214954474e-05
+Generation # 5  Max Fitness: 0.0001375022225320457
+New Best Fitness
+Generation # 6  Max Fitness: 0.0001375022225320457
+Generation # 7  Max Fitness: 0.0001375022225320457
+Generation # 8  Max Fitness: 0.0001375022225320457
+Generation # 9  Max Fitness: 0.00014124214421807913
+New Best Fitness
+Generation # 10  Max Fitness: 0.00014124214421807913
+Generation # 11  Max Fitness: 0.00014124214421807913
+Generation # 12  Max Fitness: 0.00014124214421807913
+Generation # 13  Max Fitness: 0.0002819290174218203
+New Best Fitness
+Generation # 14  Max Fitness: 0.0002819290174218203
+Generation # 15  Max Fitness: 0.0002819290174218203
+Generation # 16  Max Fitness: 0.0002819290174218203
+Generation # 17  Max Fitness: 0.0002819290174218203
+Generation # 18  Max Fitness: 0.0002819290174218203
+Generation # 19  Max Fitness: 0.0002819290174218203
+Generation # 20  Max Fitness: 0.0002819290174218203
+Generation # 21  Max Fitness: 0.0002819290174218203
+Generation # 22  Max Fitness: 0.0002819290174218203
+Generation # 23  Max Fitness: 0.0002819290174218203
+Generation # 24  Max Fitness: 0.0002819290174218203
+Generation # 25  Max Fitness: 0.0002819290174218203
+Generation # 26  Max Fitness: 0.0002819290174218203
+Generation # 27  Max Fitness: 0.0002819290174218203
+Generation # 28  Max Fitness: 0.0002819290174218203
+Generation # 29  Max Fitness: 0.0002819290174218203
+Generation # 30  Max Fitness: 0.0002819290174218203
+Generation # 31  Max Fitness: 0.0002819290174218203
+Generation # 32  Max Fitness: 0.0002819290174218203
+Generation # 33  Max Fitness: 0.0002819290174218203
+Generation # 34  Max Fitness: 0.00029354407057403015
+New Best Fitness
+Generation # 35  Max Fitness: 0.00029354407057403015
+Generation # 36  Max Fitness: 0.00029354407057403015
+Generation # 37  Max Fitness: 0.00029354407057403015
+Generation # 38  Max Fitness: 0.00029354407057403015
+Generation # 39  Max Fitness: 0.0003160333340454276
+New Best Fitness
+Generation # 40  Max Fitness: 0.0003160333340454276
+Generation # 41  Max Fitness: 0.0003160333340454276
+Generation # 42  Max Fitness: 0.0003160333340454276
+Generation # 43  Max Fitness: 0.0003160333340454276
+Generation # 44  Max Fitness: 0.0003160333340454276
+Generation # 45  Max Fitness: 0.0003368913388875102
+New Best Fitness
+Generation # 46  Max Fitness: 0.0003368913388875102
+Generation # 47  Max Fitness: 0.0003368913388875102
+Generation # 48  Max Fitness: 0.0003368913388875102
+Generation # 49  Max Fitness: 0.0003368913388875102
+Accuracy:  95.29411764705881 %
+61 <= node_count < 100
+Population: 2  Node Count: 64
+1.4157632981845008e-09 1.4157632981845008e-09
+Generation # 0  Max Fitness: 3.161583586996567e-05
+New Best Fitness
+Generation # 1  Max Fitness: 0.00012682243825771206
+New Best Fitness
+Generation # 2  Max Fitness: 0.00012682243825771206
+Generation # 3  Max Fitness: 0.00012682243825771206
+Generation # 4  Max Fitness: 0.000291687430320884
+New Best Fitness
+Generation # 5  Max Fitness: 0.000291687430320884
+Generation # 6  Max Fitness: 0.000291687430320884
+Generation # 7  Max Fitness: 0.000291687430320884
+Generation # 8  Max Fitness: 0.000291687430320884
+Generation # 9  Max Fitness: 0.000291687430320884
+Generation # 10  Max Fitness: 0.0006070331040721324
+New Best Fitness
+Generation # 11  Max Fitness: 0.0006070331040721324
+Generation # 12  Max Fitness: 0.0006070331040721324
+Generation # 13  Max Fitness: 0.0006070331040721324
+Generation # 14  Max Fitness: 0.0006070331040721324
+Generation # 15  Max Fitness: 0.0006070331040721324
+Generation # 16  Max Fitness: 0.0006070331040721324
+Generation # 17  Max Fitness: 0.0006070331040721324
+Generation # 18  Max Fitness: 0.0006070331040721324
+Generation # 19  Max Fitness: 0.0006070331040721324
+Generation # 20  Max Fitness: 0.0006070331040721324
+Generation # 21  Max Fitness: 0.0006070331040721324
+Generation # 22  Max Fitness: 0.0006070331040721324
+Generation # 23  Max Fitness: 0.0006070331040721324
+Generation # 24  Max Fitness: 0.0006070331040721324
+Generation # 25  Max Fitness: 0.0006070331040721324
+Generation # 26  Max Fitness: 0.0006070331040721324
+Generation # 27  Max Fitness: 0.0006070331040721324
+Generation # 28  Max Fitness: 0.0006070331040721324
+Generation # 29  Max Fitness: 0.0006070331040721324
+Generation # 30  Max Fitness: 0.0006070331040721324
+Generation # 31  Max Fitness: 0.0006070331040721324
+Generation # 32  Max Fitness: 0.0006070331040721324
+Generation # 33  Max Fitness: 0.0006070331040721324
+Generation # 34  Max Fitness: 0.0006070331040721324
+Generation # 35  Max Fitness: 0.0006070331040721324
+Generation # 36  Max Fitness: 0.0006070331040721324
+Generation # 37  Max Fitness: 0.0006070331040721324
+Generation # 38  Max Fitness: 0.0006070331040721324
+Generation # 39  Max Fitness: 0.0006070331040721324
+Generation # 40  Max Fitness: 0.0006070331040721324
+Generation # 41  Max Fitness: 0.0006070331040721324
+Generation # 42  Max Fitness: 0.0006070331040721324
+Generation # 43  Max Fitness: 0.0005818396636400791
+Generation # 44  Max Fitness: 0.0005818396636400791
+Generation # 45  Max Fitness: 0.0005818396636400791
+Generation # 46  Max Fitness: 0.0006541392668142902
+New Best Fitness
+Generation # 47  Max Fitness: 0.0006740825371439941
+New Best Fitness
+Generation # 48  Max Fitness: 0.0006740825371439941
+Generation # 49  Max Fitness: 0.0006740825371439941
+Accuracy:  96.47058823529412 %
+63 <= node_count < 100
+Population: 3  Node Count: 85
+2.5772271515597096e-11 2.5772271515597096e-11
+Generation # 0  Max Fitness: 2.5772271515597096e-11
+Generation # 1  Max Fitness: 6.3765699127004295e-06
+New Best Fitness
+Generation # 2  Max Fitness: 9.138513175225748e-06
+New Best Fitness
+Generation # 3  Max Fitness: 7.413856221140443e-05
+New Best Fitness
+Generation # 4  Max Fitness: 3.8859973605282985e-05
+Generation # 5  Max Fitness: 3.8859973605282985e-05
+Generation # 6  Max Fitness: 3.8859973605282985e-05
+Generation # 7  Max Fitness: 0.00012438396745301033
+New Best Fitness
+Generation # 8  Max Fitness: 0.00012438396745301033
+Generation # 9  Max Fitness: 0.00012438396745301033
+Generation # 10  Max Fitness: 0.00012438396745301033
+Generation # 11  Max Fitness: 0.00012438396745301033
+Generation # 12  Max Fitness: 0.00012438396745301033
+Generation # 13  Max Fitness: 0.00012438396745301033
+Generation # 14  Max Fitness: 0.00012438396745301033
+Generation # 15  Max Fitness: 0.00012438396745301033
+Generation # 16  Max Fitness: 0.00012438396745301033
+Generation # 17  Max Fitness: 0.00014942933553648192
+New Best Fitness
+Generation # 18  Max Fitness: 0.00017929436750496755
+New Best Fitness
+Generation # 19  Max Fitness: 0.00017929436750496755
+Generation # 20  Max Fitness: 0.00017929436750496755
+Generation # 21  Max Fitness: 0.00017929436750496755
+Generation # 22  Max Fitness: 0.00018464175072869116
+New Best Fitness
+Generation # 23  Max Fitness: 0.00018464175072869116
+Generation # 24  Max Fitness: 0.00018464175072869116
+Generation # 25  Max Fitness: 0.00018464175072869116
+Generation # 26  Max Fitness: 0.00018464175072869116
+Generation # 27  Max Fitness: 0.00018464175072869116
+Generation # 28  Max Fitness: 0.00018464175072869116
+Generation # 29  Max Fitness: 0.00017929436750496755
+Generation # 30  Max Fitness: 0.00017929436750496755
+Generation # 31  Max Fitness: 0.00017929436750496755
+Generation # 32  Max Fitness: 0.00016317177971372708
+Generation # 33  Max Fitness: 0.00016317177971372708
+Generation # 34  Max Fitness: 0.00016317177971372708
+Generation # 35  Max Fitness: 0.00016317177971372708
+Generation # 36  Max Fitness: 0.00016317177971372708
+Generation # 37  Max Fitness: 0.0001736338623275431
+Generation # 38  Max Fitness: 0.0001736338623275431
+Generation # 39  Max Fitness: 0.0001736338623275431
+Generation # 40  Max Fitness: 0.0001736338623275431
+Generation # 41  Max Fitness: 0.0001736338623275431
+Generation # 42  Max Fitness: 0.0001736338623275431
+Generation # 43  Max Fitness: 0.0001736338623275431
+Generation # 44  Max Fitness: 0.0001736338623275431
+Generation # 45  Max Fitness: 0.0001736338623275431
+Generation # 46  Max Fitness: 0.00014942933553648192
+Generation # 47  Max Fitness: 0.00014942933553648192
+Generation # 48  Max Fitness: 0.00014942933553648192
+Generation # 49  Max Fitness: 0.00014942933553648192
+Accuracy:  96.47058823529412 %
+75 <= node_count < 100
+Population: 4  Node Count: 94
+3.978168828265896e-12 3.978168828265896e-12
+Generation # 0  Max Fitness: 5.193486196227127e-10
+New Best Fitness
+Generation # 1  Max Fitness: 7.14852896664203e-06
+New Best Fitness
+Generation # 2  Max Fitness: 8.65369368449198e-06
+New Best Fitness
+Generation # 3  Max Fitness: 0.0001376484195464095
+New Best Fitness
+Generation # 4  Max Fitness: 0.0001376484195464095
+Generation # 5  Max Fitness: 0.0001376484195464095
+Generation # 6  Max Fitness: 0.0001376484195464095
+Generation # 7  Max Fitness: 0.0001376484195464095
+Generation # 8  Max Fitness: 0.0001376484195464095
+Generation # 9  Max Fitness: 9.26555812607656e-05
+Generation # 10  Max Fitness: 9.26555812607656e-05
+Generation # 11  Max Fitness: 9.26555812607656e-05
+Generation # 12  Max Fitness: 9.26555812607656e-05
+Generation # 13  Max Fitness: 0.00013750167283047517
+Generation # 14  Max Fitness: 0.00013750167283047517
+Generation # 15  Max Fitness: 0.00013750167283047517
+Generation # 16  Max Fitness: 0.00013750167283047517
+Generation # 17  Max Fitness: 0.00013750167283047517
+Generation # 18  Max Fitness: 0.00013750167283047517
+Generation # 19  Max Fitness: 0.00013750167283047517
+Generation # 20  Max Fitness: 0.00013750167283047517
+Generation # 21  Max Fitness: 0.00013750167283047517
+Generation # 22  Max Fitness: 0.00013750167283047517
+Generation # 23  Max Fitness: 0.000164931674060084
+New Best Fitness
+Generation # 24  Max Fitness: 0.000164931674060084
+Generation # 25  Max Fitness: 0.000164931674060084
+Generation # 26  Max Fitness: 0.000164931674060084
+Generation # 27  Max Fitness: 0.000164931674060084
+Generation # 28  Max Fitness: 0.000164931674060084
+Generation # 29  Max Fitness: 0.000164931674060084
+Generation # 30  Max Fitness: 0.000164931674060084
+Generation # 31  Max Fitness: 0.000164931674060084
+Generation # 32  Max Fitness: 0.000164931674060084
+Generation # 33  Max Fitness: 0.000164931674060084
+Generation # 34  Max Fitness: 0.000164931674060084
+Generation # 35  Max Fitness: 0.000164931674060084
+Generation # 36  Max Fitness: 0.000164931674060084
+Generation # 37  Max Fitness: 0.000164931674060084
+Generation # 38  Max Fitness: 0.000164931674060084
+Generation # 39  Max Fitness: 0.000164931674060084
+Generation # 40  Max Fitness: 0.000164931674060084
+Generation # 41  Max Fitness: 0.00015227457982879068
+Generation # 42  Max Fitness: 0.00015227457982879068
+Generation # 43  Max Fitness: 0.00015227457982879068
+Generation # 44  Max Fitness: 0.00015227457982879068
+Generation # 45  Max Fitness: 0.00015227457982879068
+Generation # 46  Max Fitness: 0.00015227457982879068
+Generation # 47  Max Fitness: 0.00015227457982879068
+Generation # 48  Max Fitness: 0.00015227457982879068
+Generation # 49  Max Fitness: 0.00015227457982879068
+Accuracy:  96.47058823529412 %
+85 <= node_count < 100
+Population: 5  Node Count: 92
+5.8035480681343055e-12 5.8035480681343055e-12
+Generation # 0  Max Fitness: 4.5532418812946655e-05
+New Best Fitness
+Generation # 1  Max Fitness: 9.297303482796047e-05
+New Best Fitness
+Generation # 2  Max Fitness: 4.5532418812946655e-05
+Generation # 3  Max Fitness: 4.5532418812946655e-05
+Generation # 4  Max Fitness: 4.5532418812946655e-05
+Generation # 5  Max Fitness: 4.5532418812946655e-05
+Generation # 6  Max Fitness: 4.5532418812946655e-05
+Generation # 7  Max Fitness: 4.5532418812946655e-05
+Generation # 8  Max Fitness: 4.5532418812946655e-05
+Generation # 9  Max Fitness: 4.5532418812946655e-05
+Generation # 10  Max Fitness: 4.5532418812946655e-05
+Generation # 11  Max Fitness: 4.5532418812946655e-05
+Generation # 12  Max Fitness: 4.5532418812946655e-05
+Generation # 13  Max Fitness: 4.5532418812946655e-05
+Generation # 14  Max Fitness: 4.5532418812946655e-05
+Generation # 15  Max Fitness: 7.341853994183647e-05
+Generation # 16  Max Fitness: 7.341853994183647e-05
+Generation # 17  Max Fitness: 7.341853994183647e-05
+Generation # 18  Max Fitness: 7.341853994183647e-05
+Generation # 19  Max Fitness: 7.341853994183647e-05
+Generation # 20  Max Fitness: 7.341853994183647e-05
+Generation # 21  Max Fitness: 7.341853994183647e-05
+Generation # 22  Max Fitness: 7.341853994183647e-05
+Generation # 23  Max Fitness: 8.95491113005622e-05
+Generation # 24  Max Fitness: 8.95491113005622e-05
+Generation # 25  Max Fitness: 8.95491113005622e-05
+Generation # 26  Max Fitness: 9.57016636239135e-05
+New Best Fitness
+Generation # 27  Max Fitness: 9.57016636239135e-05
+Generation # 28  Max Fitness: 9.57016636239135e-05
+Generation # 29  Max Fitness: 9.57016636239135e-05
+Generation # 30  Max Fitness: 9.57016636239135e-05
+Generation # 31  Max Fitness: 9.57016636239135e-05
+Generation # 32  Max Fitness: 9.57016636239135e-05
+Generation # 33  Max Fitness: 9.57016636239135e-05
+Generation # 34  Max Fitness: 0.00010300094305285604
+New Best Fitness
+Generation # 35  Max Fitness: 0.00010300094305285604
+Generation # 36  Max Fitness: 0.00010300094305285604
+Generation # 37  Max Fitness: 0.00010300094305285604
+Generation # 38  Max Fitness: 0.00010300094305285604
+Generation # 39  Max Fitness: 0.00010300094305285604
+Generation # 40  Max Fitness: 0.00010300094305285604
+Generation # 41  Max Fitness: 0.00010300094305285604
+Generation # 42  Max Fitness: 0.00010300094305285604
+Generation # 43  Max Fitness: 0.00010300094305285604
+Generation # 44  Max Fitness: 0.00019907895296712036
+New Best Fitness
+Generation # 45  Max Fitness: 0.00019907895296712036
+Generation # 46  Max Fitness: 0.00019907895296712036
+Generation # 47  Max Fitness: 0.0002576544806729886
+New Best Fitness
+Generation # 48  Max Fitness: 0.0002576544806729886
+Generation # 49  Max Fitness: 0.0002576544806729886
+Accuracy:  97.6470588235294 %
+Replaced  0.00016905594739936744  with  0.0002576544806729886
+85 <= node_count < 92
+Population: 6  Node Count: 89
+4.6254797711931587e-14 4.6254797711931587e-14
+Generation # 0  Max Fitness: 2.8110573971243777e-05
+New Best Fitness
+Generation # 1  Max Fitness: 3.57765687000603e-05
+New Best Fitness
+Generation # 2  Max Fitness: 3.57765687000603e-05
+Generation # 3  Max Fitness: 3.57765687000603e-05
+Generation # 4  Max Fitness: 5.7320044279508384e-05
+New Best Fitness
+Generation # 5  Max Fitness: 5.7320044279508384e-05
+Generation # 6  Max Fitness: 5.7320044279508384e-05
+Generation # 7  Max Fitness: 5.7320044279508384e-05
+Generation # 8  Max Fitness: 5.7320044279508384e-05
+Generation # 9  Max Fitness: 6.484894676806027e-05
+New Best Fitness
+Generation # 10  Max Fitness: 6.484894676806027e-05
+Generation # 11  Max Fitness: 6.484894676806027e-05
+Generation # 12  Max Fitness: 6.484894676806027e-05
+Generation # 13  Max Fitness: 6.484894676806027e-05
+Generation # 14  Max Fitness: 6.484894676806027e-05
+Generation # 15  Max Fitness: 6.484894676806027e-05
+Generation # 16  Max Fitness: 0.00016123092148212856
+New Best Fitness
+Generation # 17  Max Fitness: 0.00016123092148212856
+Generation # 18  Max Fitness: 0.00016123092148212856
+Generation # 19  Max Fitness: 0.00016123092148212856
+Generation # 20  Max Fitness: 0.00016123092148212856
+Generation # 21  Max Fitness: 0.00016123092148212856
+Generation # 22  Max Fitness: 0.00016123092148212856
+Generation # 23  Max Fitness: 0.00016123092148212856
+Generation # 24  Max Fitness: 0.00016123092148212856
+Generation # 25  Max Fitness: 0.00016123092148212856
+Generation # 26  Max Fitness: 0.00016123092148212856
+Generation # 27  Max Fitness: 0.00016123092148212856
+Generation # 28  Max Fitness: 0.00016123092148212856
+Generation # 29  Max Fitness: 0.00016123092148212856
+Generation # 30  Max Fitness: 0.00016123092148212856
+Generation # 31  Max Fitness: 0.00016123092148212856
+Generation # 32  Max Fitness: 0.00016123092148212856
+Generation # 33  Max Fitness: 0.00016123092148212856
+Generation # 34  Max Fitness: 0.00016123092148212856
+Generation # 35  Max Fitness: 0.00016123092148212856
+Generation # 36  Max Fitness: 0.00016123092148212856
+Generation # 37  Max Fitness: 0.00016123092148212856
+Generation # 38  Max Fitness: 0.00016123092148212856
+Generation # 39  Max Fitness: 0.00016123092148212856
+Generation # 40  Max Fitness: 0.00016123092148212856
+Generation # 41  Max Fitness: 0.00016123092148212856
+Generation # 42  Max Fitness: 0.00016123092148212856
+Generation # 43  Max Fitness: 0.00016123092148212856
+Generation # 44  Max Fitness: 0.00016123092148212856
+Generation # 45  Max Fitness: 0.00016123092148212856
+Generation # 46  Max Fitness: 0.00016123092148212856
+Generation # 47  Max Fitness: 0.00016123092148212856
+Generation # 48  Max Fitness: 0.00016123092148212856
+Generation # 49  Max Fitness: 0.00016123092148212856
+Accuracy:  96.47058823529412 %
+88 <= node_count < 92
+Population: 7  Node Count: 90
+8.58321987469233e-12 8.58321987469233e-12
+Generation # 0  Max Fitness: 3.139586905898924e-06
+New Best Fitness
+Generation # 1  Max Fitness: 3.139586905898924e-06
+Generation # 2  Max Fitness: 5.166357138867548e-05
+New Best Fitness
+Generation # 3  Max Fitness: 5.166357138867548e-05
+Generation # 4  Max Fitness: 0.00017619573883198374
+New Best Fitness
+Generation # 5  Max Fitness: 0.00017619573883198374
+Generation # 6  Max Fitness: 0.00017619573883198374
+Generation # 7  Max Fitness: 0.00017619573883198374
+Generation # 8  Max Fitness: 0.00017619573883198374
+Generation # 9  Max Fitness: 0.00017619573883198374
+Generation # 10  Max Fitness: 0.00017619573883198374
+Generation # 11  Max Fitness: 0.00017619573883198374
+Generation # 12  Max Fitness: 0.00017619573883198374
+Generation # 13  Max Fitness: 0.00017619573883198374
+Generation # 14  Max Fitness: 0.00017619573883198374
+Generation # 15  Max Fitness: 0.00017619573883198374
+Generation # 16  Max Fitness: 0.00017619573883198374
+Generation # 17  Max Fitness: 0.00017619573883198374
+Generation # 18  Max Fitness: 0.00017619573883198374
+Generation # 19  Max Fitness: 0.00017619573883198374
+Generation # 20  Max Fitness: 0.00017619573883198374
+Generation # 21  Max Fitness: 0.00017619573883198374
+Generation # 22  Max Fitness: 0.00017619573883198374
+Generation # 23  Max Fitness: 0.00017619573883198374
+Generation # 24  Max Fitness: 0.00017619573883198374
+Generation # 25  Max Fitness: 5.202568400414304e-05
+Generation # 26  Max Fitness: 5.202568400414304e-05
+Generation # 27  Max Fitness: 5.202568400414304e-05
+Generation # 28  Max Fitness: 5.202568400414304e-05
+Generation # 29  Max Fitness: 5.202568400414304e-05
+Generation # 30  Max Fitness: 5.202568400414304e-05
+Generation # 31  Max Fitness: 5.202568400414304e-05
+Generation # 32  Max Fitness: 5.202568400414304e-05
+Generation # 33  Max Fitness: 5.202568400414304e-05
+Generation # 34  Max Fitness: 5.202568400414304e-05
+Generation # 35  Max Fitness: 5.202568400414304e-05
+Generation # 36  Max Fitness: 5.202568400414304e-05
+Generation # 37  Max Fitness: 5.202568400414304e-05
+Generation # 38  Max Fitness: 5.62330187385902e-05
+Generation # 39  Max Fitness: 5.62330187385902e-05
+Generation # 40  Max Fitness: 5.62330187385902e-05
+Generation # 41  Max Fitness: 5.62330187385902e-05
+Generation # 42  Max Fitness: 5.62330187385902e-05
+Generation # 43  Max Fitness: 5.62330187385902e-05
+Generation # 44  Max Fitness: 5.62330187385902e-05
+Generation # 45  Max Fitness: 5.62330187385902e-05
+Generation # 46  Max Fitness: 5.62330187385902e-05
+Generation # 47  Max Fitness: 5.62330187385902e-05
+Generation # 48  Max Fitness: 5.62330187385902e-05
+Generation # 49  Max Fitness: 5.62330187385902e-05
+Accuracy:  97.6470588235294 %
+88 <= node_count < 92
+Population: 8  Node Count: 91
+8.330595323369922e-12 8.330595323369922e-12
+Generation # 0  Max Fitness: 3.070951617938218e-05
+New Best Fitness
+Generation # 1  Max Fitness: 4.962900036352371e-05
+New Best Fitness
+Generation # 2  Max Fitness: 4.962900036352371e-05
+Generation # 3  Max Fitness: 4.962900036352371e-05
+Generation # 4  Max Fitness: 5.7516249810049474e-05
+New Best Fitness
+Generation # 5  Max Fitness: 5.7516249810049474e-05
+Generation # 6  Max Fitness: 5.7516249810049474e-05
+Generation # 7  Max Fitness: 5.7516249810049474e-05
+Generation # 8  Max Fitness: 5.7516249810049474e-05
+Generation # 9  Max Fitness: 5.7516249810049474e-05
+Generation # 10  Max Fitness: 5.7516249810049474e-05
+Generation # 11  Max Fitness: 5.7516249810049474e-05
+Generation # 12  Max Fitness: 5.7516249810049474e-05
+Generation # 13  Max Fitness: 5.7516249810049474e-05
+Generation # 14  Max Fitness: 6.147424957920793e-05
+New Best Fitness
+Generation # 15  Max Fitness: 6.147424957920793e-05
+Generation # 16  Max Fitness: 6.147424957920793e-05
+Generation # 17  Max Fitness: 6.147424957920793e-05
+Generation # 18  Max Fitness: 6.147424957920793e-05
+Generation # 19  Max Fitness: 6.212362545504464e-05
+New Best Fitness
+Generation # 20  Max Fitness: 6.212362545504464e-05
+Generation # 21  Max Fitness: 6.212362545504464e-05
+Generation # 22  Max Fitness: 6.212362545504464e-05
+Generation # 23  Max Fitness: 6.212362545504464e-05
+Generation # 24  Max Fitness: 6.212362545504464e-05
+Generation # 25  Max Fitness: 6.212362545504464e-05
+Generation # 26  Max Fitness: 0.00011201974367766779
+New Best Fitness
+Generation # 27  Max Fitness: 0.00011201974367766779
+Generation # 28  Max Fitness: 0.00011201974367766779
+Generation # 29  Max Fitness: 0.00011201974367766779
+Generation # 30  Max Fitness: 0.00011201974367766779
+Generation # 31  Max Fitness: 0.00011201974367766779
+Generation # 32  Max Fitness: 0.00011201974367766779
+Generation # 33  Max Fitness: 0.00011201974367766779
+Generation # 34  Max Fitness: 0.00011201974367766779
+Generation # 35  Max Fitness: 0.00011201974367766779
+Generation # 36  Max Fitness: 0.00011201974367766779
+Generation # 37  Max Fitness: 0.00011201974367766779
+Generation # 38  Max Fitness: 0.00011201974367766779
+Generation # 39  Max Fitness: 0.00011201974367766779
+Generation # 40  Max Fitness: 0.00011184221635012791
+Generation # 41  Max Fitness: 0.00011184221635012791
+Generation # 42  Max Fitness: 0.00011184221635012791
+Generation # 43  Max Fitness: 0.00011184221635012791
+Generation # 44  Max Fitness: 0.00011184221635012791
+Generation # 45  Max Fitness: 0.00010342277072280315
+Generation # 46  Max Fitness: 0.00010342277072280315
+Generation # 47  Max Fitness: 0.00010342277072280315
+Generation # 48  Max Fitness: 0.00010342277072280315
+Generation # 49  Max Fitness: 0.00010342277072280315
+Accuracy:  95.29411764705881 %
+90 <= node_count < 92
+Population: 9  Node Count: 90
+8.491256804606342e-12 8.491256804606342e-12
+Generation # 0  Max Fitness: 1.700266867501812e-05
+New Best Fitness
+Generation # 1  Max Fitness: 1.700266867501812e-05
+Generation # 2  Max Fitness: 2.6795183114915778e-05
+New Best Fitness
+Generation # 3  Max Fitness: 2.6795183114915778e-05
+Generation # 4  Max Fitness: 2.6795183114915778e-05
+Generation # 5  Max Fitness: 3.389646422523089e-05
+New Best Fitness
+Generation # 6  Max Fitness: 0.00016786807953395464
+New Best Fitness
+Generation # 7  Max Fitness: 0.00016786807953395464
+Generation # 8  Max Fitness: 0.00016786807953395464
+Generation # 9  Max Fitness: 0.00016786807953395464
+Generation # 10  Max Fitness: 0.00016786807953395464
+Generation # 11  Max Fitness: 0.00019076457377427498
+New Best Fitness
+Generation # 12  Max Fitness: 0.00019076457377427498
+Generation # 13  Max Fitness: 0.00019076457377427498
+Generation # 14  Max Fitness: 0.00019076457377427498
+Generation # 15  Max Fitness: 0.00019076457377427498
+Generation # 16  Max Fitness: 0.00019076457377427498
+Generation # 17  Max Fitness: 0.00019076457377427498
+Generation # 18  Max Fitness: 0.00019076457377427498
+Generation # 19  Max Fitness: 0.00019076457377427498
+Generation # 20  Max Fitness: 0.00019076457377427498
+Generation # 21  Max Fitness: 0.00019076457377427498
+Generation # 22  Max Fitness: 0.00019076457377427498
+Generation # 23  Max Fitness: 0.0001074314052469428
+Generation # 24  Max Fitness: 0.00010160301522621423
+Generation # 25  Max Fitness: 0.00010160301522621423
+Generation # 26  Max Fitness: 0.00010160301522621423
+Generation # 27  Max Fitness: 0.00010160301522621423
+Generation # 28  Max Fitness: 0.0001021271280534681
+Generation # 29  Max Fitness: 0.0001021271280534681
+Generation # 30  Max Fitness: 0.0001021271280534681
+Generation # 31  Max Fitness: 0.0001021271280534681
+Generation # 32  Max Fitness: 0.0001021271280534681
+Generation # 33  Max Fitness: 0.0001021271280534681
+Generation # 34  Max Fitness: 0.00022513083560517022
+New Best Fitness
+Generation # 35  Max Fitness: 0.00022513083560517022
+Generation # 36  Max Fitness: 0.00022513083560517022
+Generation # 37  Max Fitness: 0.00022513083560517022
+Generation # 38  Max Fitness: 0.00022513083560517022
+Generation # 39  Max Fitness: 0.00022513083560517022
+Generation # 40  Max Fitness: 0.00022513083560517022
+Generation # 41  Max Fitness: 0.00022513083560517022
+Generation # 42  Max Fitness: 0.00022513083560517022
+Generation # 43  Max Fitness: 0.00012318801134982775
+Generation # 44  Max Fitness: 0.00012318801134982775
+Generation # 45  Max Fitness: 0.00013707864764446709
+Generation # 46  Max Fitness: 0.00013707864764446709
+Generation # 47  Max Fitness: 0.00013707864764446709
+Generation # 48  Max Fitness: 0.00013707864764446709
+Generation # 49  Max Fitness: 0.00015874743730647905
+Accuracy:  97.6470588235294 %
+68 <= node_count < 92
+Population: 10  Node Count: 75
+1.840645086045697e-10 1.840645086045697e-10
+Generation # 0  Max Fitness: 4.951369862161112e-05
+New Best Fitness
+Generation # 1  Max Fitness: 4.951369862161112e-05
+Generation # 2  Max Fitness: 3.457037160771898e-05
+Generation # 3  Max Fitness: 3.457037160771898e-05
+Generation # 4  Max Fitness: 4.316151246235876e-05
+Generation # 5  Max Fitness: 4.316151246235876e-05
+Generation # 6  Max Fitness: 4.316151246235876e-05
+Generation # 7  Max Fitness: 4.316151246235876e-05
+Generation # 8  Max Fitness: 4.316151246235876e-05
+Generation # 9  Max Fitness: 4.316151246235876e-05
+Generation # 10  Max Fitness: 6.88246298319422e-05
+New Best Fitness
+Generation # 11  Max Fitness: 0.00011050598096674307
+New Best Fitness
+Generation # 12  Max Fitness: 0.00011050598096674307
+Generation # 13  Max Fitness: 0.00011050598096674307
+Generation # 14  Max Fitness: 0.00011050598096674307
+Generation # 15  Max Fitness: 0.0001722664097876887
+New Best Fitness
+Generation # 16  Max Fitness: 0.0015231977286490367
+New Best Fitness
+Generation # 17  Max Fitness: 0.0015231977286490367
+Generation # 18  Max Fitness: 0.0015231977286490367
+Generation # 19  Max Fitness: 0.0015231977286490367
+Generation # 20  Max Fitness: 0.0015231977286490367
+Generation # 21  Max Fitness: 0.0015231977286490367
+Generation # 22  Max Fitness: 0.0015231977286490367
+Generation # 23  Max Fitness: 0.0015231977286490367
+Generation # 24  Max Fitness: 0.0015231977286490367
+Generation # 25  Max Fitness: 0.0015231977286490367
+Generation # 26  Max Fitness: 0.0015231977286490367
+Generation # 27  Max Fitness: 0.0015231977286490367
+Generation # 28  Max Fitness: 0.0015231977286490367
+Generation # 29  Max Fitness: 0.0015231977286490367
+Generation # 30  Max Fitness: 0.0015231977286490367
+Generation # 31  Max Fitness: 0.0015231977286490367
+Generation # 32  Max Fitness: 0.0015231977286490367
+Generation # 33  Max Fitness: 0.0015231977286490367
+Generation # 34  Max Fitness: 0.0015231977286490367
+Generation # 35  Max Fitness: 0.0015231977286490367
+Generation # 36  Max Fitness: 0.0015231977286490367
+Generation # 37  Max Fitness: 0.0015231977286490367
+Generation # 38  Max Fitness: 0.0015231977286490367
+Generation # 39  Max Fitness: 0.0015231977286490367
+Generation # 40  Max Fitness: 0.0015231977286490367
+Generation # 41  Max Fitness: 0.0011050598096674308
+Generation # 42  Max Fitness: 0.0016008997349674884
+New Best Fitness
+Generation # 43  Max Fitness: 0.002756262556603019
+New Best Fitness
+Generation # 44  Max Fitness: 0.002756262556603019
+Generation # 45  Max Fitness: 0.002756262556603019
+Generation # 46  Max Fitness: 0.002756262556603019
+Generation # 47  Max Fitness: 0.002756262556603019
+Generation # 48  Max Fitness: 0.002756262556603019
+Generation # 49  Max Fitness: 0.005261955789878491
+New Best Fitness
+Accuracy:  94.11764705882352 %
+72 <= node_count < 92
+Population: 11  Node Count: 77
+4.628216588318719e-16 4.628216588318719e-16
+Generation # 0  Max Fitness: 0.0001589830657833633
+New Best Fitness
+Generation # 1  Max Fitness: 0.0001589830657833633
+Generation # 2  Max Fitness: 0.0001589830657833633
+Generation # 3  Max Fitness: 0.0001589830657833633
+Generation # 4  Max Fitness: 0.0001589830657833633
+Generation # 5  Max Fitness: 0.0001589830657833633
+Generation # 6  Max Fitness: 0.0001589830657833633
+Generation # 7  Max Fitness: 0.0001589830657833633
+Generation # 8  Max Fitness: 0.0001589830657833633
+Generation # 9  Max Fitness: 0.0001589830657833633
+Generation # 10  Max Fitness: 0.0001589830657833633
+Generation # 11  Max Fitness: 0.0001589830657833633
+Generation # 12  Max Fitness: 0.0001589830657833633
+Generation # 13  Max Fitness: 0.0001589830657833633
+Generation # 14  Max Fitness: 0.00018204291802160393
+New Best Fitness
+Generation # 15  Max Fitness: 0.00018204291802160393
+Generation # 16  Max Fitness: 0.00018204291802160393
+Generation # 17  Max Fitness: 0.00018204291802160393
+Generation # 18  Max Fitness: 0.00018204291802160393
+Generation # 19  Max Fitness: 0.00018204291802160393
+Generation # 20  Max Fitness: 0.00018204291802160393
+Generation # 21  Max Fitness: 0.00018204291802160393
+Generation # 22  Max Fitness: 0.00018204291802160393
+Generation # 23  Max Fitness: 0.00018204291802160393
+Generation # 24  Max Fitness: 0.00018204291802160393
+Generation # 25  Max Fitness: 0.00018204291802160393
+Generation # 26  Max Fitness: 0.00018204291802160393
+Generation # 27  Max Fitness: 0.00018204291802160393
+Generation # 28  Max Fitness: 0.00018204291802160393
+Generation # 29  Max Fitness: 0.00025654814047258804
+New Best Fitness
+Generation # 30  Max Fitness: 0.00025654814047258804
+Generation # 31  Max Fitness: 0.00025654814047258804
+Generation # 32  Max Fitness: 0.00018204291802160393
+Generation # 33  Max Fitness: 0.00018204291802160393
+Generation # 34  Max Fitness: 0.00018204291802160393
+Generation # 35  Max Fitness: 0.00018204291802160393
+Generation # 36  Max Fitness: 0.00018075052408027408
+Generation # 37  Max Fitness: 0.00018075052408027408
+Generation # 38  Max Fitness: 0.00018075052408027408
+Generation # 39  Max Fitness: 0.00018204291802160393
+Generation # 40  Max Fitness: 0.00018204291802160393
+Generation # 41  Max Fitness: 0.00018204291802160393
+Generation # 42  Max Fitness: 0.00018204291802160393
+Generation # 43  Max Fitness: 0.00018204291802160393
+Generation # 44  Max Fitness: 0.00018204291802160393
+Generation # 45  Max Fitness: 0.00018204291802160393
+Generation # 46  Max Fitness: 0.00018185715994199005
+Generation # 47  Max Fitness: 0.00018167178057405732
+Generation # 48  Max Fitness: 0.00018167178057405732
+Generation # 49  Max Fitness: 0.00018167178057405732
+Accuracy:  97.6470588235294 %
+72 <= node_count < 92
+Population: 12  Node Count: 86
+1.8525082484556468e-11 1.8525082484556468e-11
+Generation # 0  Max Fitness: 1.8525082484556468e-11
+Generation # 1  Max Fitness: 4.132761542877197e-06
+New Best Fitness
+Generation # 2  Max Fitness: 4.132761542877197e-06
+Generation # 3  Max Fitness: 5.438394511205808e-05
+New Best Fitness
+Generation # 4  Max Fitness: 6.005769518170865e-05
+New Best Fitness
+Generation # 5  Max Fitness: 6.005769518170865e-05
+Generation # 6  Max Fitness: 6.005769518170865e-05
+Generation # 7  Max Fitness: 0.00013500678679487216
+New Best Fitness
+Generation # 8  Max Fitness: 0.00013500678679487216
+Generation # 9  Max Fitness: 0.00013500678679487216
+Generation # 10  Max Fitness: 0.00013500678679487216
+Generation # 11  Max Fitness: 0.00013500678679487216
+Generation # 12  Max Fitness: 0.00016186139764646086
+New Best Fitness
+Generation # 13  Max Fitness: 0.00016186139764646086
+Generation # 14  Max Fitness: 0.00016186139764646086
+Generation # 15  Max Fitness: 0.00016186139764646086
+Generation # 16  Max Fitness: 0.00018849681751233416
+New Best Fitness
+Generation # 17  Max Fitness: 0.00018849681751233416
+Generation # 18  Max Fitness: 0.00018849681751233416
+Generation # 19  Max Fitness: 0.00018849681751233416
+Generation # 20  Max Fitness: 0.00018849681751233416
+Generation # 21  Max Fitness: 0.00018226742452233046
+Generation # 22  Max Fitness: 0.00018226742452233046
+Generation # 23  Max Fitness: 0.0002390248568775987
+New Best Fitness
+Generation # 24  Max Fitness: 0.0002390248568775987
+Generation # 25  Max Fitness: 0.0002390248568775987
+Generation # 26  Max Fitness: 0.0002390248568775987
+Generation # 27  Max Fitness: 0.0002390248568775987
+Generation # 28  Max Fitness: 0.0002390248568775987
+Generation # 29  Max Fitness: 0.0002390248568775987
+Generation # 30  Max Fitness: 0.0002390248568775987
+Generation # 31  Max Fitness: 0.0002390248568775987
+Generation # 32  Max Fitness: 0.0002390248568775987
+Generation # 33  Max Fitness: 0.0002390248568775987
+Generation # 34  Max Fitness: 0.0002390248568775987
+Generation # 35  Max Fitness: 0.0002390248568775987
+Generation # 36  Max Fitness: 0.0002390248568775987
+Generation # 37  Max Fitness: 0.0002390248568775987
+Generation # 38  Max Fitness: 0.0002390248568775987
+Generation # 39  Max Fitness: 0.0002390248568775987
+Generation # 40  Max Fitness: 0.0002390248568775987
+Generation # 41  Max Fitness: 0.0002390248568775987
+Generation # 42  Max Fitness: 0.0002390248568775987
+Generation # 43  Max Fitness: 0.0002390248568775987
+Generation # 44  Max Fitness: 0.0002390248568775987
+Generation # 45  Max Fitness: 0.0002867699541148745
+New Best Fitness
+Generation # 46  Max Fitness: 0.0002867699541148745
+Generation # 47  Max Fitness: 0.0002867699541148745
+Generation # 48  Max Fitness: 0.0002867699541148745
+Generation # 49  Max Fitness: 0.0002867699541148745
+Accuracy:  95.29411764705881 %
+80 <= node_count < 92
+Population: 13  Node Count: 85
+2.5365768810303768e-11 2.5365768810303768e-11
+Generation # 0  Max Fitness: 8.602624724566571e-06
+New Best Fitness
+Generation # 1  Max Fitness: 1.1621395672538207e-05
+New Best Fitness
+Generation # 2  Max Fitness: 1.1621395672538207e-05
+Generation # 3  Max Fitness: 0.00012590579413473559
+New Best Fitness
+Generation # 4  Max Fitness: 0.00012590579413473559
+Generation # 5  Max Fitness: 0.00012590579413473559
+Generation # 6  Max Fitness: 0.00012590579413473559
+Generation # 7  Max Fitness: 0.00012590579413473559
+Generation # 8  Max Fitness: 0.00012590579413473559
+Generation # 9  Max Fitness: 0.00012590579413473559
+Generation # 10  Max Fitness: 0.00012590579413473559
+Generation # 11  Max Fitness: 0.00020553995154352306
+New Best Fitness
+Generation # 12  Max Fitness: 0.00020553995154352306
+Generation # 13  Max Fitness: 0.00020553995154352306
+Generation # 14  Max Fitness: 0.00020553995154352306
+Generation # 15  Max Fitness: 0.00012590579413473559
+Generation # 16  Max Fitness: 0.00012590579413473559
+Generation # 17  Max Fitness: 0.00012590579413473559
+Generation # 18  Max Fitness: 0.00020553995154352306
+Generation # 19  Max Fitness: 0.00020553995154352306
+Generation # 20  Max Fitness: 0.00020553995154352306
+Generation # 21  Max Fitness: 0.00020553995154352306
+Generation # 22  Max Fitness: 0.00020553995154352306
+Generation # 23  Max Fitness: 0.00020553995154352306
+Generation # 24  Max Fitness: 0.00020553995154352306
+Generation # 25  Max Fitness: 0.00020553995154352306
+Generation # 26  Max Fitness: 0.00020553995154352306
+Generation # 27  Max Fitness: 0.00020553995154352306
+Generation # 28  Max Fitness: 0.00020553995154352306
+Generation # 29  Max Fitness: 0.00020553995154352306
+Generation # 30  Max Fitness: 0.00020553995154352306
+Generation # 31  Max Fitness: 0.00020553995154352306
+Generation # 32  Max Fitness: 0.00020553995154352306
+Generation # 33  Max Fitness: 0.00020553995154352306
+Generation # 34  Max Fitness: 0.00020553995154352306
+Generation # 35  Max Fitness: 0.00020553995154352306
+Generation # 36  Max Fitness: 0.00020553995154352306
+Generation # 37  Max Fitness: 0.00020553995154352306
+Generation # 38  Max Fitness: 0.00020553995154352306
+Generation # 39  Max Fitness: 0.00020553995154352306
+Generation # 40  Max Fitness: 0.00020553995154352306
+Generation # 41  Max Fitness: 0.00020553995154352306
+Generation # 42  Max Fitness: 0.00020553995154352306
+Generation # 43  Max Fitness: 0.00018245922412433313
+Generation # 44  Max Fitness: 0.00018245922412433313
+Generation # 45  Max Fitness: 0.00018245922412433313
+Generation # 46  Max Fitness: 0.0001818144918836111
+Generation # 47  Max Fitness: 0.0001818144918836111
+Generation # 48  Max Fitness: 0.0001818144918836111
+Generation # 49  Max Fitness: 0.0001818144918836111
+Accuracy:  96.47058823529412 %
+83 <= node_count < 92
+Population: 14  Node Count: 87
+1.78655207242704e-11 1.78655207242704e-11
+Generation # 0  Max Fitness: 2.4591382692829732e-05
+New Best Fitness
+Generation # 1  Max Fitness: 7.570538171568072e-05
+New Best Fitness
+Generation # 2  Max Fitness: 7.570538171568072e-05
+Generation # 3  Max Fitness: 7.570538171568072e-05
+Generation # 4  Max Fitness: 7.570538171568072e-05
+Generation # 5  Max Fitness: 7.570538171568072e-05
+Generation # 6  Max Fitness: 7.570538171568072e-05
+Generation # 7  Max Fitness: 7.570538171568072e-05
+Generation # 8  Max Fitness: 9.102230185497798e-05
+New Best Fitness
+Generation # 9  Max Fitness: 7.570538171568072e-05
+Generation # 10  Max Fitness: 7.570538171568072e-05
+Generation # 11  Max Fitness: 7.570538171568072e-05
+Generation # 12  Max Fitness: 7.570538171568072e-05
+Generation # 13  Max Fitness: 7.491899829696357e-05
+Generation # 14  Max Fitness: 7.679313988649308e-05
+Generation # 15  Max Fitness: 0.00010616756497968714
+New Best Fitness
+Generation # 16  Max Fitness: 0.00010616756497968714
+Generation # 17  Max Fitness: 0.00010616756497968714
+Generation # 18  Max Fitness: 0.00010616756497968714
+Generation # 19  Max Fitness: 0.00010616756497968714
+Generation # 20  Max Fitness: 0.0002722348918368263
+New Best Fitness
+Generation # 21  Max Fitness: 0.0002722348918368263
+Generation # 22  Max Fitness: 0.0002722348918368263
+Generation # 23  Max Fitness: 0.0002722348918368263
+Generation # 24  Max Fitness: 0.0002722348918368263
+Generation # 25  Max Fitness: 0.0002722348918368263
+Generation # 26  Max Fitness: 0.0002722348918368263
+Generation # 27  Max Fitness: 0.0002722348918368263
+Generation # 28  Max Fitness: 0.0002722348918368263
+Generation # 29  Max Fitness: 0.0002722348918368263
+Generation # 30  Max Fitness: 0.0002722348918368263
+Generation # 31  Max Fitness: 0.0002722348918368263
+Generation # 32  Max Fitness: 0.0002722348918368263
+Generation # 33  Max Fitness: 0.0002722348918368263
+Generation # 34  Max Fitness: 0.0002722348918368263
+Generation # 35  Max Fitness: 0.0002722348918368263
+Generation # 36  Max Fitness: 0.0002722348918368263
+Generation # 37  Max Fitness: 0.0002722348918368263
+Generation # 38  Max Fitness: 0.0002722348918368263
+Generation # 39  Max Fitness: 0.0002722348918368263
+Generation # 40  Max Fitness: 0.0002722348918368263
+Generation # 41  Max Fitness: 0.0002722348918368263
+Generation # 42  Max Fitness: 0.0002722348918368263
+Generation # 43  Max Fitness: 0.00027273349053982414
+New Best Fitness
+Generation # 44  Max Fitness: 0.00027273349053982414
+Generation # 45  Max Fitness: 0.00027273349053982414
+Generation # 46  Max Fitness: 0.00027273349053982414
+Generation # 47  Max Fitness: 0.00027273349053982414
+Generation # 48  Max Fitness: 0.00027273349053982414
+Generation # 49  Max Fitness: 0.00027273349053982414
+Accuracy:  96.47058823529412 %
+86 <= node_count < 92
+Node Count: 92
+30
+1
+Weighted Connections:
+(85, 78) : 0.0010504841847159695
+(35, 1) : 0.0016605649748230773
+(40, 39) : 0.007336536646959945
+(35, 2) : -0.0029619341327676687
+(31, 30) : 0.0007023476223932052
+(89, 3) : -0.004696796627416391
+(53, 45) : 0.013474492948020935
+(83, 53) : 0.013219024705435331
+(57, 42) : 0.0077875596148257765
+(47, 27) : 0.006567306431486651
+(86, 66) : -8.804476098865191e-05
+(60, 49) : 0.0013965012417906744
+(43, 11) : 0.0012785602492938449
+(88, 40) : 0.004233831640568288
+(91, 53) : 0.18501314921466339
+(56, 17) : 0.000905952913268113
+(55, 43) : 0.006999814799132839
+(46, 4) : 0.005245083667693738
+(65, 58) : 0.006949761878718711
+(59, 44) : 0.012031886166838002
+(33, 17) : -0.0009028637585721494
+(85, 55) : 0.008675481814070995
+(90, 34) : 0.015683385297641524
+(71, 4) : 0.0021396644115323866
+(45, 17) : -0.0042181627838987455
+(84, 28) : -0.0039297346807303036
+(67, 60) : 0.0012271549116117358
+(58, 11) : 0.0035648305214896945
+(80, 20) : 0.007431749397346269
+(79, 68) : 0.0012657110441588633
+(87, 33) : 0.007629109442854167
+(70, 27) : -0.04084675565839036
+(83, 1) : -0.00853911558735404
+(44, 42) : 0.010267148964085399
+(48, 45) : 0.010339709855015774
+(86, 30) : 0.004909435533237131
+(69, 62) : 0.006178791046701657
+(60, 5) : 0.005855729573996146
+(82, 22) : -0.0001556608710181694
+(73, 59) : 0.010860422493177861
+(37, 5) : 0.00291629384722519
+(76, 32) : 0.003169607309283709
+(50, 47) : 0.006800021637685908
+(81, 43) : 0.0024770186558885255
+(62, 23) : 0.0037135470990274054
+(49, 2) : 0.006064259598110725
+(39, 19) : 0.009158600095873503
+(80, 64) : 0.0042048080382371174
+(52, 9) : 0.00024198255034008054
+(83, 77) : 0.005777365661288914
+(74, 26) : 0.0021404446755588463
+(77, 63) : 0.0011484221652138709
+(90, 25) : -0.026035397524346724
+(82, 74) : 0.0024898085418701044
+(54, 3) : 0.0004000264207986928
+(81, 68) : 0.001420409717086032
+(64, 28) : 0.004228128203653067
+(85, 79) : 0.0018597901147428524
+(76, 20) : 0.0023008546574932714
+(31, 7) : -0.0005727048063756883
+(89, 4) : -0.0016036290821161584
+(79, 57) : 0.004771084506044171
+(83, 58) : 0.008360879508685142
+(66, 30) : 0.008070403190166818
+(57, 51) : 0.0013231515314758742
+(40, 21) : -0.0016459375259891488
+(88, 47) : 0.004194361876161841
+(87, 73) : 0.0026359576328862347
+(78, 38) : 0.0022054722424014565
+(86, 69) : 3.869518021199632e-05
+(91, 10) : -0.22202169010468892
+(65, 51) : 0.004110093364809777
+(55, 32) : 0.01012891694753905
+(46, 15) : -0.001224665757033237
+(85, 48) : 0.005375077957247823
+(68, 24) : 0.0013295598885394
+(59, 37) : 0.0076291289801656385
+(42, 23) : 0.005737783385664523
+(90, 45) : 0.014534863224895705
+(64, 40) : 0.010198549307679742
+(45, 10) : -0.020319613593394768
+(36, 33) : 0.0108629704976004
+(67, 37) : 0.0015266682554553018
+(58, 18) : 0.0016046803325224096
+(32, 1) : 0.0019344556911712488
+(80, 11) : 0.008752257973593282
+(70, 18) : 0.0034111114485882456
+(61, 39) : 0.0019172220724339834
+(44, 33) : 0.009525478453948242
+(79, 77) : 0.002514510076410178
+(48, 36) : 0.0020922710517155235
+(83, 6) : -0.034169404220132114
+(86, 17) : 0.005187815926252742
+(60, 28) : 0.004426470558967529
+(69, 39) : 0.0067032318377465115
+(82, 17) : 0.00665346323626195
+(63, 49) : 0.01625122278259856
+(37, 14) : 0.009763903329404217
+(73, 60) : 0.009877766466470624
+(85, 4) : 0.009545813733185204
+(89, 65) : 0.007964805216765937
+(81, 44) : 0.008552550115650247
+(72, 7) : -0.0007619787345106581
+(71, 49) : 0.00341929000929329
+(62, 30) : 0.002026958484677363
+(75, 50) : 0.009885593118181159
+(80, 71) : 0.006669466361545596
+(78, 29) : 0.003838847482292648
+(52, 16) : 0.005101334263659048
+(74, 5) : 0.006334479049171545
+(48, 16) : 0.004525199678475151
+(77, 56) : 0.0055559431046233254
+(64, 19) : 0.002892586963555743
+(54, 26) : 0.0006248148081069234
+(82, 69) : 0.00044826949284913965
+(85, 72) : 0.0037859718124606916
+(50, 26) : -0.0007867258252815869
+(31, 12) : 0.002862776042887151
+(89, 13) : 0.001157171932058912
+(57, 52) : 0.008074272747335487
+(40, 28) : -0.0008321924964516525
+(47, 41) : 0.007405500494584359
+(30, 19) : 0.00036356350661823165
+(88, 54) : 0.009528154902161306
+(87, 70) : 0.007924108885270537
+(91, 3) : -0.4855426156092065
+(65, 52) : 0.006807874094935423
+(46, 22) : -0.0029100125260349942
+(85, 57) : 0.00031667897146575385
+(68, 7) : 0.006604917771416001
+(90, 52) : 0.014963220501385927
+(64, 47) : 0.008564675029380762
+(45, 3) : -0.03143371766473939
+(84, 34) : 0.004018138154311652
+(67, 42) : 0.002723243678902665
+(41, 35) : 0.007629964990803664
+(80, 2) : 1.3156963034578228e-06
+(79, 74) : 0.007466668269153154
+(87, 55) : 0.007918685078622322
+(70, 21) : -0.009734734099740253
+(83, 15) : -0.005222656636302264
+(66, 45) : 0.002575975176150129
+(57, 0) : 0.0011046145512151188
+(86, 40) : 0.00958990288882368
+(69, 32) : 0.010741593854835106
+(60, 27) : 0.002271970335582752
+(88, 66) : 0.0016816192734077345
+(73, 37) : 0.0052749921386340565
+(65, 64) : 0.007893141756130559
+(63, 62) : 0.013761338658658783
+(85, 13) : 0.002901204533550477
+(50, 33) : 0.006976570471236358
+(81, 37) : 0.007321718137386437
+(62, 1) : 0.008697961727271964
+(36, 28) : 0.005668686148688338
+(39, 1) : -0.002704914720578362
+(80, 62) : 0.003527637542059268
+(52, 31) : 7.601709274790516e-06
+(87, 11) : 0.0025427145640529616
+(91, 76) : 0.07429026609878925
+(74, 12) : 0.007670737857244083
+(38, 30) : 0.01540185832233697
+(77, 49) : 0.0073114317140481186
+(51, 2) : 0.0006156990578068841
+(82, 60) : 0.008362000200914262
+(73, 17) : 0.010205500694457796
+(85, 81) : 0.0044934484984549385
+(76, 10) : 0.0028548430478632925
+(50, 21) : -0.00041629270825964106
+(89, 22) : -0.00839212880465617
+(79, 15) : 0.009780361143857559
+(66, 16) : 0.0010168659730882552
+(40, 3) : -0.026276525021404974
+(30, 26) : 0.003707910524002272
+(88, 61) : 0.002603183140251745
+(78, 48) : 0.01049991743945684
+(52, 35) : 0.007004437618127136
+(91, 24) : -0.17180098052815726
+(65, 13) : 0.01019655498989724
+(56, 38) : 0.009272669549885681
+(55, 54) : 0.008376616894786106
+(46, 25) : 0.005559293827353826
+(68, 14) : 0.0010331282606414606
+(59, 51) : 0.008128199106301214
+(42, 25) : 0.009030816770320275
+(90, 63) : 0.02048431281367851
+(64, 38) : 0.012469977438319941
+(54, 41) : 0.007863751705637852
+(84, 41) : 0.005086148498973008
+(67, 19) : 0.003799024890390659
+(58, 36) : 0.00047021947177197567
+(41, 36) : 0.005913835279129283
+(32, 31) : 0.0037367495039612115
+(70, 12) : -0.006493796034804365
+(61, 57) : 0.0101889303886525
+(44, 23) : 0.001677038043376923
+(83, 20) : -0.034910653464212675
+(57, 9) : 0.0038834502412626896
+(38, 37) : 0.013026650848232709
+(66, 36) : 0.005200636197326723
+(88, 73) : 0.00515285333849156
+(60, 18) : 0.004546322995957127
+(43, 42) : 0.0013415240768013914
+(34, 29) : -0.0006688594595593762
+(82, 3) : 0.004202513332464563
+(63, 39) : 0.012088331660261006
+(73, 46) : 0.006845397953552042
+(85, 22) : 0.005716896424550161
+(68, 50) : 0.001718868799080094
+(59, 15) : -0.012610962529285088
+(89, 83) : 0.012259362762922311
+(90, 67) : 0.010712177036646736
+(81, 30) : 0.0010274074828781773
+(36, 27) : 0.004378874738227495
+(72, 53) : 0.009304390229691607
+(71, 39) : 0.004045383170439363
+(75, 32) : 0.011688348578545664
+(80, 53) : 0.003551906384244692
+(70, 56) : 0.010321802192334148
+(61, 13) : 0.005672147528674802
+(91, 69) : 0.15207431573987032
+(74, 55) : 0.009055854036103358
+(48, 14) : 0.006597681477868678
+(38, 17) : -0.0132233565104776
+(77, 42) : 0.0014395540766151366
+(68, 65) : 0.007781730544791821
+(51, 11) : 0.005477149945688842
+(73, 26) : 0.004064500672693878
+(54, 20) : 0.006392151039210612
+(82, 55) : 0.008129631272674324
+(76, 1) : 0.003610544432277375
+(50, 12) : -0.0017800012546909385
+(89, 31) : 0.009227824590855735
+(79, 20) : 0.004219998266536068
+(53, 1) : -0.007851186703594498
+(75, 28) : -0.01229049943582733
+(40, 10) : -0.01160432460289245
+(30, 29) : 0.0070632136863510095
+(88, 4) : 0.0030637957765841076
+(87, 84) : 0.0078053170486312535
+(52, 42) : 0.006767803031539779
+(78, 59) : 0.007742064429288202
+(91, 17) : -0.2502517427854539
+(56, 45) : 0.008192604262855398
+(55, 15) : 0.002351878708798964
+(46, 32) : 0.004698682071079063
+(65, 6) : 0.008800691547423386
+(77, 30) : 0.0056972570816851646
+(42, 0) : 0.004312823819222287
+(90, 6) : -0.04666572645730359
+(73, 70) : 0.0003748255486788379
+(64, 61) : 0.0050439307376366595
+(54, 32) : 0.0037228377928488258
+(84, 48) : 0.004969030566063846
+(67, 24) : 0.0041758158553976705
+(32, 22) : -0.001866196901221933
+(58, 47) : 0.003221555406283996
+(89, 43) : 0.00983294436243865
+(70, 7) : -0.03432380499108948
+(61, 50) : 0.005570288359628002
+(44, 14) : 0.003446998526785108
+(83, 29) : -0.005506696949708459
+(75, 72) : 0.010135182899708866
+(47, 3) : 0.000856552620626055
+(66, 63) : 0.00351447264572433
+(57, 18) : 0.006476231086324461
+(86, 58) : 0.00851980661790682
+(69, 18) : 0.004933890437114458
+(60, 41) : 0.0011589202846744554
+(43, 35) : 0.004943856439149414
+(34, 20) : -0.025501368189971896
+(63, 44) : 0.01414530033433031
+(91, 45) : 0.16470432661599224
+(85, 31) : 0.006788894955655959
+(68, 57) : 0.00146042089358514
+(76, 68) : 0.005164885754388386
+(89, 84) : 0.006395675806792274
+(72, 60) : 0.0046470368687249715
+(62, 51) : 0.005996782278881519
+(45, 41) : 0.01066525282244871
+(90, 74) : 0.003954410568495748
+(36, 2) : 0.006234842491459629
+(49, 46) : 0.003405723592410881
+(84, 4) : 0.0006190305902058347
+(80, 44) : 0.00476753280140719
+(61, 6) : 0.001106509491602784
+(87, 25) : 0.000917623366396239
+(70, 51) : 0.0016254531283784364
+(91, 90) : 0.14297994315374954
+(48, 5) : -0.009715192803474928
+(38, 8) : 0.00042062699374713857
+(74, 62) : 0.003745030948045611
+(77, 35) : 0.0013509075623835034
+(51, 16) : 0.007581514363584129
+(82, 46) : 0.009921470963050422
+(73, 3) : 0.0038640267564135408
+(63, 16) : 0.007055246614371502
+(76, 56) : -0.0007755125455702533
+(50, 7) : -0.003199189347933898
+(79, 29) : 0.004829329684604245
+(70, 66) : 0.0022019349096462975
+(53, 10) : -0.011168310692560966
+(75, 21) : -0.00595188971241852
+(49, 26) : -0.01813360326888052
+(30, 4) : 0.0007394254464958922
+(88, 11) : 0.00349373417691736
+(78, 2) : 0.008478497121083442
+(52, 49) : 0.0030388210512430065
+(91, 22) : -0.7290225472788947
+(65, 31) : 0.0004991456908898101
+(56, 52) : 0.0006164780791207035
+(55, 4) : 0.007846854531677598
+(46, 43) : 0.00774849771075157
+(42, 11) : 0.0039567745969459195
+(90, 1) : -0.009519699536562537
+(64, 52) : 0.010184818793018094
+(84, 63) : 0.009867907609844465
+(67, 1) : 0.009736275972523276
+(58, 54) : 0.009136861797169799
+(41, 22) : -0.0018703537552529975
+(89, 44) : 0.008204913976302205
+(79, 33) : 0.002621033899191698
+(44, 5) : 0.003305777197987242
+(83, 34) : 0.012138513635314336
+(57, 27) : 0.0035565240735944328
+(47, 8) : 0.0031395341283958498
+(75, 65) : 0.0049563191589834165
+(88, 87) : 0.010349314337442702
+(86, 61) : 0.0010480873693214578
+(43, 24) : 0.003353590131267922
+(69, 27) : -0.07174739260147854
+(91, 34) : 0.11782428577297928
+(65, 43) : 0.007645919326047971
+(37, 34) : 0.002816932202635916
+(56, 0) : 0.005274565377041182
+(85, 24) : 0.004335911393492272
+(77, 75) : 0.003398752761959973
+(68, 32) : 0.009142418848244332
+(76, 67) : 0.003949374297084811
+(90, 85) : 0.0031602676046494395
+(81, 8) : 0.0036583251505338176
+(72, 35) : 0.003492235737323426
+(71, 21) : 0.0042441149907547155
+(84, 3) : -0.014496437573749939
+(45, 34) : 0.016318846197303633
+(49, 39) : 0.011484916189297277
+(80, 35) : 0.005258078086661253
+(87, 22) : -0.0006522123484871082
+(70, 42) : 0.006098136120420564
+(91, 83) : 0.10031139468365072
+(74, 57) : 0.0010621269096137082
+(35, 20) : -0.004070182613511349
+(38, 3) : -0.017572695152048005
+(86, 9) : 0.005594797055616498
+(51, 25) : 0.007102738685161139
+(82, 41) : 0.008673905567748424
+(63, 25) : -0.014459220035394325
+(37, 22) : 0.008754741918596277
+(76, 55) : 0.008468249844079564
+(79, 26) : 0.0007278471141149416
+(70, 69) : 0.006785295424585809
+(53, 19) : 0.008868171720333802
+(75, 10) : -0.0027797502904858525
+(49, 19) : 0.003084207985633617
+(30, 15) : 0.0005777010711040818
+(88, 18) : 0.010847534790822701
+(78, 5) : 0.004685911359218887
+(65, 16) : 0.006978284365068162
+(55, 29) : 0.0065473298221825965
+(77, 16) : 0.007613822272956183
+(51, 37) : 0.003147372244950167
+(90, 8) : -0.008966075272554178
+(64, 11) : 0.00016382750895376272
+(54, 50) : 0.006363918391631496
+(84, 70) : 0.007420525227705168
+(67, 6) : 0.00783173764892361
+(58, 49) : 0.01034840898569932
+(31, 20) : 0.004955514353388065
+(89, 53) : 0.009350269684241642
+(79, 46) : 0.004902132675969599
+(53, 39) : 0.006193605266746312
+(83, 43) : 0.004820708996127302
+(75, 70) : 0.017009998244646093
+(40, 36) : 0.008366567531200285
+(66, 49) : 0.002529082242061235
+(57, 28) : 0.001577326899968382
+(86, 52) : 0.00433006916776533
+(69, 4) : -0.0006697699241830037
+(43, 17) : 0.009126196592271592
+(91, 59) : 0.13988649543560736
+(65, 44) : 0.0034704514237573216
+(56, 7) : 0.0005677608580438807
+(85, 33) : 0.005283537140651341
+(68, 47) : 0.0016294068020909994
+(59, 18) : 0.013005375231098674
+(42, 38) : 0.0006194564719082213
+(72, 42) : 0.011548251375024438
+(71, 18) : 0.004471041729382121
+(62, 61) : 0.005603222918303986
+(45, 27) : -0.03513514411135029
+(84, 10) : -0.005938791862576717
+(58, 5) : 0.0008984968948955132
+(39, 37) : 0.0025840379547225367
+(67, 50) : 0.006668783098765279
+(78, 64) : 0.0048253053566398125
+(61, 24) : 0.010387135273003693
+(35, 29) : 0.007036604443320301
+(80, 26) : 0.008225234921843304
+(70, 45) : 0.0026127307018394665
+(74, 32) : 0.00019342176540282572
+(43, 0) : -0.002959261923606415
+(86, 0) : 0.008052603424421878
+(51, 30) : 0.003852534940482221
+(82, 32) : 0.0011278775358326025
+(73, 13) : 9.464991087972316e-05
+(37, 31) : 0.00048233901205505973
+(63, 6) : -0.030632273037772294
+(76, 46) : 0.0029442475237857215
+(81, 61) : 0.004783147425956937
+(72, 22) : -0.0006420014973471696
+(71, 70) : 0.01042418799932675
+(53, 28) : -0.010724686577024805
+(75, 3) : -0.016372595856294844
+(49, 20) : -0.01285071161786843
+(39, 25) : -0.0012348917866232979
+(88, 25) : 0.005619584206781851
+(78, 12) : 0.008285602623716679
+(52, 7) : -0.024540381111857575
+(74, 20) : 0.0021009472776019208
+(55, 26) : 0.0016761069807879876
+(83, 67) : 0.012791777865063005
+(77, 9) : 0.010366188254099415
+(51, 42) : 0.0016507211519908424
+(81, 78) : 0.002009628829749901
+(64, 2) : -0.0006028966989277124
+(54, 53) : 0.006127270974475011
+(90, 19) : 0.009591359459466268
+(84, 77) : 0.004764205795096513
+(67, 15) : 0.006549897521308643
+(58, 56) : 0.010214878942681794
+(41, 0) : -0.003592654109765808
+(31, 29) : 0.006338061606802768
+(89, 62) : 0.0012050808447055562
+(53, 32) : 0.013849670313168902
+(79, 55) : 0.006481970613533923
+(83, 48) : 0.006215431661255305
+(57, 37) : 0.0009028960258504075
+(47, 30) : 0.0060086761140153025
+(66, 8) : -0.0004877209712605433
+(86, 79) : 0.004990522669716279
+(69, 13) : -0.01248264178753773
+(43, 22) : 0.010100270216963235
+(34, 33) : 0.0050086554936077336
+(91, 48) : 0.059230028522172955
+(65, 37) : 0.005509950587971239
+(46, 1) : 0.0067390927329374
+(56, 14) : 0.008202439790843362
+(85, 42) : 0.004146863198503493
+(68, 22) : 0.006612397835502014
+(33, 28) : -0.002695203028138299
+(59, 43) : 0.008654800388219573
+(90, 39) : 0.00613201707651807
+(71, 11) : 0.0012199778056212979
+(62, 36) : 0.0037318303263122244
+(45, 20) : -0.021903648929547413
+(84, 17) : -0.002645063982684006
+(67, 59) : 0.0012276518962555001
+(39, 34) : 0.007147681012080106
+(58, 12) : 0.0023647070229760986
+(80, 17) : 0.00645181336921105
+(87, 36) : 0.007195879043821283
+(70, 36) : 0.0050433806069028276
+(78, 75) : 0.003932851363134213
+(74, 43) : 0.00041595746978758254
+(48, 42) : 0.0038307577414461056
+(86, 27) : 0.004917473199626937
+(69, 49) : 0.012826044976161532
+(60, 10) : 0.0071879137329523375
+(73, 54) : 0.005353199932296457
+(63, 15) : -0.0074612165236504786
+(37, 24) : 0.006076639801540781
+(82, 27) : 0.002848780556178032
+(76, 37) : 0.01220439392228474
+(50, 48) : 0.008634633615295163
+(81, 54) : 0.0015139562039583412
+(62, 16) : -0.00016833566217582866
+(72, 29) : -0.0025662856614342205
+(71, 63) : 0.0028872310267361793
+(75, 56) : -0.0014486355486239223
+(49, 13) : 0.007480560057270744
+(39, 22) : -0.014161907500582323
+(80, 77) : 0.00858548136011693
+(52, 14) : 0.0006130471631545903
+(78, 23) : 0.00315269290811252
+(83, 72) : 0.006189957026865578
+(74, 31) : 0.008749003130822318
+(77, 2) : -0.005249265641237885
+(81, 71) : 0.0011267367395853868
+(82, 79) : 0.0032478407622178627
+(64, 25) : 0.0029896570310665436
+(54, 12) : -0.002907292459558754
+(85, 66) : 0.0003044009963013901
+(76, 25) : -0.02412976320178689
+(31, 26) : -0.0002683159256834932
+(89, 7) : -0.017048872802576897
+(79, 60) : 0.009904545260247987
+(53, 41) : 0.006178968603264177
+(83, 57) : 0.012998357881042677
+(66, 3) : -0.0012486585547650186
+(57, 46) : 0.008819593877477537
+(40, 18) : 0.0044498437158850095
+(86, 70) : 0.0009263009682483767
+(78, 35) : 0.0016752860581770181
+(43, 15) : 0.004587993943798545
+(88, 44) : 0.006538399963875988
+(87, 76) : -0.0008968282856707201
+(65, 62) : 0.0013131165037289815
+(56, 21) : 0.0032831687227726537
+(55, 39) : 0.006806155190414836
+(85, 51) : 0.007222375290758321
+(68, 29) : 0.0001438456096715495
+(59, 32) : 0.002833950626423451
+(42, 40) : 0.00970352704624053
+(90, 46) : 0.006048419182925517
+(71, 0) : 0.00949407336281708
+(62, 47) : 0.0096726043908438
+(45, 13) : -0.007703798057190267
+(84, 24) : -0.007080156656479296
+(58, 23) : 0.002974062597169037
+(32, 14) : 0.00835593561231597
+(67, 32) : 0.004096660941187504
+(80, 8) : -0.0007711872583692444
+(61, 42) : 0.002465463147610596
+(44, 38) : 0.0033490846789076692
+(35, 11) : 0.003062790133741484
+(79, 64) : 0.009696158639913069
+(48, 33) : 0.007518146844212019
+(83, 5) : -0.017947293243869396
+(86, 18) : 0.006811974001671084
+(69, 58) : 0.004903769915264866
+(34, 12) : -0.015638987144398892
+(60, 1) : 0.0009620186034576999
+(82, 18) : 0.006368132991560478
+(73, 63) : 0.004308411434849339
+(63, 52) : 0.009871775379767463
+(85, 7) : 0.00553717780478211
+(50, 43) : 0.0019068445036654763
+(81, 47) : 0.000473601110355462
+(72, 4) : 0.007564857361303176
+(71, 52) : 0.010119877441704991
+(62, 27) : 0.00047565196686606643
+(75, 49) : 0.011996990633269372
+(49, 6) : -0.01512688818486757
+(39, 15) : 0.005050738033674848
+(78, 30) : 0.009374840555464831
+(52, 21) : -0.001162895550911598
+(80, 68) : 0.007034748906229767
+(74, 6) : 0.009649709440638332
+(48, 29) : 0.0022025961739307234
+(83, 81) : 0.008966076810506141
+(77, 59) : 0.005147043407226801
+(64, 16) : 0.008433051756780077
+(54, 7) : -0.009945409963616017
+(82, 70) : 0.0004770015445895861
+(84, 83) : 0.005669803045978069
+(85, 75) : 0.00033369829253826293
+(50, 31) : 0.006507580584235213
+(31, 3) : 0.006637888574199602
+(89, 8) : -7.779079349554377e-06
+(79, 5) : 0.003479214146219197
+(53, 50) : 0.009062212413535256
+(83, 62) : 0.012778890307972383
+(57, 55) : 0.009426599206065693
+(40, 25) : -0.015225354749575147
+(47, 44) : 0.007013983343151767
+(88, 51) : 0.0010815750537472113
+(87, 69) : 0.0010613188423731316
+(43, 4) : 0.0005945948690506543
+(78, 42) : 0.004020170585288632
+(91, 14) : 0.057785378162428215
+(65, 55) : 0.0038272457932491694
+(46, 19) : 0.010089201229673586
+(56, 28) : 0.0034374679014196213
+(85, 60) : 0.009977673371237021
+(68, 4) : 0.010213880620346208
+(59, 57) : 0.008644138602128029
+(42, 19) : 0.0074807835262422386
+(90, 41) : 0.0014355827943777566
+(64, 44) : -0.0016433249972509435
+(45, 6) : -0.024780738235097275
+(84, 39) : 0.003114867910256773
+(67, 41) : 0.003965173503412862
+(58, 30) : 0.008713209200075725
+(32, 5) : 0.0029575678893469753
+(80, 15) : 0.006826383942500382
+(79, 73) : 0.0007725014389014183
+(87, 58) : 0.00394499866584151
+(70, 22) : -0.014242807158349495
+(83, 10) : -0.010414253584090876
+(66, 46) : 0.007777585440485814
+(57, 3) : 0.0024196970394355652
+(86, 21) : 0.010374531545392574
+(69, 35) : 0.012432668157344088
+(60, 24) : 0.0040937482107873775
+(34, 7) : -0.035125993747548157
+(73, 32) : 0.00442549246727172
+(63, 61) : 0.0025393012264113084
+(37, 10) : 0.001536946491181968
+(82, 13) : 0.007421758855165225
+(85, 0) : 0.004341987288672008
+(50, 34) : 0.006343991739302063
+(89, 69) : 0.0043907222599223255
+(81, 32) : 0.008223966512731828
+(62, 2) : 0.006167108364933045
+(36, 17) : -0.003221192555135729
+(72, 11) : 0.008202701732788715
+(66, 65) : 0.005457790397366773
+(75, 54) : 0.002128885871688933
+(39, 4) : -0.0007776698153350531
+(80, 59) : 0.003467622495027242
+(52, 28) : -0.002631031427649228
+(87, 14) : 0.0008905122808321643
+(91, 75) : 0.09711728520671062
+(74, 1) : 0.010732781749133133
+(48, 20) : -0.01820786736740731
+(38, 27) : -0.055686040132042536
+(77, 52) : 0.0007821188962385381
+(51, 1) : 0.0015721656311965026
+(82, 65) : 0.006027644276563774
+(64, 23) : -0.0018058445345825696
+(54, 30) : 0.0027061477146740117
+(85, 84) : 0.004691041881728919
+(76, 15) : -0.0010719035035510148
+(31, 8) : 0.002173144325974652
+(89, 17) : 0.004558096373725299
+(79, 2) : 0.004124275151443095
+(66, 21) : 0.004238939831492442
+(57, 56) : 0.009772749309050968
+(40, 0) : -0.015739280378173612
+(86, 80) : 0.0008266661005110373
+(78, 45) : 0.007687191200250506
+(52, 32) : 0.0012093409215650837
+(88, 58) : 0.0034687608426487372
+(87, 66) : 0.0066186323082032894
+(65, 8) : 0.011160997168912376
+(56, 35) : 0.004765583549969964
+(55, 53) : 0.006968568766192245
+(68, 3) : 0.0028420290851405177
+(42, 26) : 0.0011735138063827437
+(72, 70) : 0.0054932351956501705
+(90, 48) : 0.005300832570254122
+(54, 42) : 0.0027609737580402303
+(64, 35) : 0.0006425524078042969
+(84, 46) : 0.0037355509927877437
+(58, 25) : -0.0035842116186011307
+(41, 39) : 0.009550552332958664
+(32, 28) : 0.0058764443220105066
+(80, 6) : -0.003291525345557255
+(61, 60) : 0.00694407615132598
+(44, 20) : 0.0029461579132848913
+(87, 51) : 0.007721923101029953
+(83, 19) : 0.008900361142388678
+(66, 41) : 0.007919001655846294
+(74, 68) : 0.00205269227579197
+(57, 4) : 0.002476302337420124
+(88, 70) : 0.00890356030345504
+(86, 44) : 0.005143439983459352
+(34, 30) : 0.005511840059611692
+(69, 44) : 0.010478449679876819
+(82, 4) : 0.0038501433021365674
+(73, 41) : -0.00016087882199201773
+(63, 58) : 0.0015967735383498522
+(85, 9) : 0.0016888799629976392
+(68, 55) : 0.00467080871401616
+(59, 10) : -0.003553178264412825
+(89, 78) : 0.0017500908281121725
+(81, 25) : 0.009448686358879854
+(72, 50) : 0.008266397079302493
+(71, 42) : 0.0075157439973790935
+(62, 5) : 0.003453594381072078
+(75, 47) : 0.00990970925858705
+(49, 48) : 0.010369136725152682
+(87, 7) : 0.0005446293614849697
+(52, 27) : -0.04006187730413799
+(80, 50) : 0.0021857606464894875
+(91, 64) : 0.01702401985766422
+(74, 8) : 0.00348076955946745
+(48, 11) : 0.007140947212285456
+(38, 18) : 0.010816959727190777
+(77, 45) : 0.007206099228642332
+(51, 6) : -0.0005179825138810967
+(82, 56) : 0.004501051190727142
+(54, 17) : -0.0035611023302010818
+(73, 21) : 0.005497839548305843
+(76, 6) : -0.026922921870334585
+(50, 17) : 0.000922928189397418
+(89, 26) : -0.009124309101414079
+(79, 11) : 0.0007293076453265787
+(53, 4) : -0.001062460127927499
+(75, 27) : -0.035456186293275356
+(40, 7) : -0.01879139067426504
+(88, 1) : 0.008624926846379454
+(78, 52) : 0.003041347459358375
+(52, 47) : 0.011521483290803438
+(91, 28) : -0.19852704441456911
+(65, 1) : -0.001939001040674112
+(46, 29) : 0.010426204757671278
+(56, 42) : -0.0006061946104480129
+(55, 50) : 0.001888193316714324
+(68, 10) : 0.006610282995631034
+(59, 55) : 0.00723981084084501
+(42, 5) : 0.0025698807044343616
+(90, 59) : 0.004617675095500935
+(73, 65) : 0.004950927798705891
+(64, 58) : 0.007775423918420508
+(54, 45) : -0.00036155538973511425
+(84, 53) : 0.007146802585075795
+(67, 23) : 0.004571133330499753
+(58, 32) : 0.0076636670108118626
+(41, 40) : 0.0010942440195554314
+(32, 19) : 0.006984812368771767
+(70, 0) : -0.010470690518553483
+(61, 53) : 0.0018143904179903222
+(44, 19) : 0.007797491751045445
+(83, 24) : -0.0043906068554878455
+(66, 32) : 0.007197224931314178
+(57, 13) : 0.00511805192944369
+(47, 6) : 0.0014832181690416478
+(86, 39) : 0.00256695886587097
+(69, 21) : -0.007992133971951582
+(60, 46) : 0.0017300180656299564
+(88, 77) : 0.0017836758229955478
+(34, 25) : -0.02678119309568342
+(63, 35) : 0.0027645636659121456
+(91, 40) : 0.06618391276982064
+(76, 73) : 0.005933893193893718
+(59, 3) : -0.032817013694544386
+(85, 18) : 0.0035592656572214073
+(68, 62) : 0.007149831740450693
+(90, 79) : 0.007086552851704073
+(62, 12) : 0.008058267998306006
+(45, 44) : 0.0036609523199979633
+(36, 7) : -0.011165354839101449
+(71, 35) : 0.010383327141887451
+(49, 41) : 0.004922805857803585
+(75, 36) : 0.011862446345559313
+(80, 41) : 0.0033251892549363746
+(87, 28) : 0.004252599408233727
+(70, 60) : 0.0019815029118449763
+(91, 89) : 0.07508594369646764
+(74, 51) : 0.004301366921115466
+(48, 2) : -0.01925026320502571
+(38, 21) : -0.012567421899679
+(77, 38) : 0.0005791019435483217
+(51, 15) : 0.0025818767751004134
+(82, 51) : 0.010322757937756168
+(73, 30) : 0.0006805897090385072
+(63, 23) : -0.022756056552100983
+(76, 61) : 0.014086598311879516
+(50, 8) : 0.0012553075056846307
+(79, 16) : 0.006252160818819723
+(53, 13) : -0.0055427649714746615
+(75, 16) : 0.005805700602632243
+(40, 14) : 0.010221813307262533
+(30, 1) : 0.0015817986001486603
+(88, 8) : 0.009703971581777746
+(78, 63) : 0.00023692411075195525
+(87, 80) : 0.004486227615932665
+(91, 21) : -0.25351657699275953
+(65, 26) : -0.00659918147215041
+(56, 49) : 0.009710498811648788
+(55, 11) : 0.0045691952526187565
+(46, 36) : 0.005776220429783464
+(42, 12) : 0.006581473395939307
+(90, 2) : -0.03433583356133758
+(64, 49) : 0.007753883385119498
+(54, 36) : 0.0009883637809376706
+(62, 8) : 0.008416137850432005
+(84, 60) : 0.011743388471648084
+(58, 43) : 0.003311046579848514
+(41, 17) : 0.00541276928754265
+(67, 28) : 0.009152695378353382
+(89, 47) : 0.004727811950637788
+(79, 36) : 0.005310474986726178
+(44, 10) : 0.00015601930109313014
+(83, 33) : 0.004908340461315287
+(66, 59) : 0.008657843315174907
+(47, 15) : 0.004989736726469295
+(57, 22) : 0.004008320700871761
+(88, 84) : 0.005849707293625536
+(86, 62) : 0.0052968593643127485
+(34, 16) : 0.00571679541041706
+(69, 30) : 0.009088333575992473
+(91, 33) : 0.06998308277814387
+(43, 39) : 0.002701484705836817
+(63, 40) : 0.004620622272132557
+(85, 27) : -0.0038838957806033242
+(68, 37) : 0.001902845965628941
+(76, 64) : 0.00839399564378906
+(89, 88) : 0.002903259591069222
+(81, 11) : 0.007550456402876661
+(72, 32) : 0.006672580987384416
+(71, 24) : 0.00922136327840328
+(62, 55) : 0.004268525510927831
+(84, 0) : -0.005949722321207428
+(45, 37) : 0.0035693138644709243
+(49, 34) : 0.006608403931319474
+(87, 21) : -0.0026244911910808556
+(70, 55) : 0.007972926116200997
+(61, 2) : 0.001017573729533253
+(35, 19) : 0.0008908916493140663
+(74, 58) : 0.0017681530635306108
+(38, 12) : -0.011928418165737779
+(86, 10) : 0.0017753488658418725
+(51, 20) : 0.006279140799363541
+(69, 66) : 0.010616288774291547
+(82, 42) : 0.01064336667555273
+(63, 28) : -0.001656568529579
+(73, 7) : 0.0007063647247886125
+(76, 52) : 0.008094446947293001
+(50, 3) : 0.0007770848537647588
+(79, 25) : 0.009672480012779941
+(53, 22) : -0.031193262732218757
+(75, 9) : 0.004898065610153587
+(49, 30) : 0.010858290202794857
+(30, 8) : 0.0008918865581910458
+(88, 15) : 0.010686921370093286
+(78, 6) : 0.006498023879374943
+(65, 19) : 0.0014959283990143874
+(55, 0) : 0.0019547634732137464
+(77, 19) : 0.008329120624752584
+(51, 32) : 0.007755258143072632
+(90, 13) : -0.014285065172201987
+(81, 80) : 0.010456171721655479
+(64, 8) : 0.0061562500848443705
+(84, 59) : 0.00635460014734406
+(67, 5) : 0.00583224231455686
+(58, 50) : 0.001594089022286917
+(41, 26) : 0.0027519688121916807
+(89, 48) : 0.003953320722901223
+(79, 45) : 6.227716760375595e-05
+(44, 1) : 0.007494857586077965
+(83, 38) : 0.008595032006302853
+(66, 50) : -0.0008498724428058852
+(57, 31) : 0.007710652890498544
+(40, 33) : 0.00909703624703916
+(86, 49) : 0.00330383688156669
+(69, 7) : -0.05568680347062638
+(43, 28) : 0.006266088743862095
+(91, 38) : 0.12452968443074683
+(56, 4) : 0.006935765312679412
+(65, 47) : 3.466276577564665e-05
+(85, 36) : 0.004616826802727096
+(59, 17) : -0.0047553810592372335
+(33, 6) : -0.026799275874476194
+(77, 71) : -0.00023404797190100797
+(90, 81) : 0.0058980702250844355
+(81, 12) : 0.0072840515153126985
+(45, 30) : 0.010383883723889572
+(84, 15) : -0.007989911710082107
+(67, 49) : 0.004389115487546261
+(58, 6) : 0.002897403639206461
+(80, 39) : -5.445212792266446e-05
+(70, 46) : 0.004713732014389433
+(35, 24) : -0.0026607346545314834
+(91, 87) : 0.026393687305437407
+(74, 37) : 0.006872202056198319
+(38, 7) : -0.03775056838826832
+(86, 13) : 0.0002137425094402158
+(51, 29) : 0.005912360458053172
+(82, 37) : 0.007899806250132955
+(73, 8) : 0.006869551507935782
+(63, 5) : -0.018969440938951553
+(37, 18) : 0.005383392764243832
+(76, 51) : 0.005145355116624413
+(72, 19) : 0.009955182081748941
+(71, 69) : 0.000650705532048957
+(53, 31) : 0.004296892477134078
+(81, 56) : 0.005696818529810075
+(75, 14) : 0.01187338607655065
+(49, 23) : -0.016170520876957285
+(39, 28) : 0.003724219938065429
+(78, 9) : 0.003814685436716596
+(52, 4) : -0.004030031139007599
+(65, 20) : -0.004305164876193636
+(55, 25) : 0.010359293288917814
+(77, 12) : 0.0016916826071934174
+(51, 41) : 0.0046553507945589585
+(90, 20) : -0.03464069087331315
+(81, 73) : 0.010658152814682648
+(64, 15) : 0.008668002976361564
+(84, 66) : 0.008967936390003563
+(67, 10) : 0.0051880141150017845
+(41, 3) : 0.003362999082325835
+(31, 16) : 0.005866624789305649
+(89, 57) : 0.0017559545248978165
+(79, 42) : 0.00454288688199944
+(53, 35) : 0.007869006862255229
+(83, 47) : 0.010032562754957734
+(66, 13) : -0.002034688263614308
+(47, 29) : 0.0009199190134218359
+(57, 32) : 0.004282324438402662
+(88, 34) : 0.000494073238938817
+(86, 72) : 0.002001655081344532
+(69, 0) : -0.025858598762725706
+(60, 59) : 0.0042223442441540054
+(91, 63) : 0.11305087115878215
+(65, 32) : 0.0017990480275583915
+(46, 2) : 0.0055074006119953675
+(56, 11) : 0.005087959058669455
+(55, 45) : 0.006833208992358175
+(85, 45) : 0.003018188095274596
+(77, 64) : 0.00894436485019048
+(68, 43) : 0.0033904209980574825
+(59, 22) : -0.025156846616060605
+(81, 5) : 0.002492521926131275
+(72, 46) : 0.00770353676309383
+(71, 14) : 0.01056612286835753
+(62, 33) : 0.0016622882973815261
+(84, 22) : -0.02682778436425525
+(67, 54) : 0.010209409319711442
+(58, 1) : 0.010302465090533331
+(39, 33) : 0.005687949113434148
+(87, 43) : 0.008994803334685959
+(70, 33) : 0.0031695832165325685
+(78, 68) : -0.00017616049992364206
+(61, 20) : 0.0036055895001923174
+(74, 44) : 0.00887253959470157
+(86, 4) : 0.007743083733255391
+(60, 15) : 0.0023424348493596434
+(69, 52) : 0.007363519557686026
+(82, 28) : 0.0024011380741725185
+(63, 2) : -0.01533632207914363
+(37, 27) : 0.006496496783958932
+(73, 49) : 0.010576016645866855
+(76, 42) : 0.0062334458611476955
+(81, 49) : 0.008418425983307097
+(53, 24) : -0.013426152610814961
+(72, 26) : -0.003916673805202488
+(71, 66) : 0.008899731778618913
+(75, 7) : -0.025433890431668278
+(49, 8) : 0.001283530986195537
+(39, 21) : 0.002278103484372877
+(88, 29) : 0.009117071756519077
+(80, 74) : 0.00965827034167308
+(78, 16) : 0.005117334829536154
+(52, 3) : -0.021654118865661695
+(83, 71) : 0.0070260143440517685
+(74, 16) : 0.007837624264286861
+(55, 22) : -0.0004233804363925888
+(77, 5) : 0.0062793880032242224
+(51, 46) : 0.007973573660330241
+(67, 46) : 0.010143712318789223
+(90, 31) : 0.0096384906057546
+(81, 66) : 0.003723303014997561
+(64, 6) : 0.004259602318985392
+(54, 9) : 0.004538986440411597
+(84, 73) : 0.0074229573568748404
+(76, 30) : 0.003244957312303253
+(41, 4) : -0.0008399575328917129
+(85, 69) : 0.0011192830570510711
+(31, 25) : 0.008695693295774763
+(79, 51) : 0.0036212393465272644
+(53, 44) : 0.0045109626018686386
+(89, 2) : -0.0035735252894143208
+(83, 52) : 0.0035557291310338557
+(66, 4) : -0.004064247981657808
+(57, 41) : 0.009242544230425816
+(47, 26) : 0.00018258026959896867
+(86, 67) : 0.006151122481438757
+(69, 9) : 0.016293835248207888
+(60, 50) : 0.0013293242574383547
+(43, 10) : -0.000515120178657253
+(91, 52) : 0.0755135134163187
+(56, 18) : 0.0018544989229025343
+(55, 42) : 0.010334225612958473
+(46, 5) : 0.0018429395284445434
+(65, 57) : 0.009655313154770648
+(59, 47) : 0.007431812461704496
+(33, 16) : -0.0040027467715801355
+(85, 54) : 0.0029612547003319786
+(90, 35) : 0.00443735107802912
+(62, 40) : 0.008400374134830987
+(45, 16) : 0.007376866541026463
+(71, 7) : 0.0062200752559696095
+(84, 29) : 0.0008099217549326273
+(67, 63) : 0.010423137562646241
+(32, 11) : 0.0068037088929975235
+(58, 8) : 0.0008854982293531267
+(80, 21) : 0.008138139634856337
+(79, 71) : 0.005929590566089339
+(35, 6) : -0.0009279884534766693
+(87, 32) : 0.00038040219862847186
+(83, 0) : -0.011994528595613185
+(44, 43) : 0.001337513974253263
+(48, 46) : 0.005068814419427556
+(86, 31) : 0.007312727216452142
+(69, 61) : 0.012773707763539201
+(60, 6) : -0.005124442914636936
+(82, 23) : 0.006556025069783744
+(73, 58) : 0.008702574333399068
+(63, 11) : 0.004727353202541129
+(37, 4) : 0.0006596732397042003
+(76, 33) : 0.007843456677992149
+(50, 44) : 0.0010236920029950349
+(72, 1) : 0.0040537014279251665
+(71, 59) : 0.005009329569806292
+(62, 20) : 0.00112559529789279
+(81, 42) : 0.01076444440758487
+(75, 60) : 0.011381956925181668
+(49, 1) : 0.000912043196527543
+(39, 18) : 0.000610034738955785
+(78, 27) : 0.0045131761000037655
+(52, 10) : -0.007651517934556412
+(80, 65) : 0.009431855608653637
+(83, 76) : 0.007064292899061449
+(48, 26) : -0.018046507815033037
+(74, 27) : 0.00524564197995049
+(77, 62) : 0.010645947137125853
+(82, 75) : 0.004393946625828673
+(54, 0) : 0.0016004166610701029
+(64, 29) : 0.008332238160371605
+(84, 80) : 0.0028818935779874283
+Biases: [0.7427538442431332, 0.6234058883062599, 0.0896515305331617, 0.7751303547639183, 0.48897026170796776, 0.40012687193719754, 0.6052125588785263, 0.6172564429847216, 0.19294046678425034, 0.9261732816467828, 0.45717629785784214, 0.2760274649316441, 0.4127958437261318, 0.0028738897638521514, 0.3948294209058972, 0.4060566789580358, 0.4613387039844234, 0.807046758440821, 0.5829050564836954, 0.7694914363214708, 0.3749740699172111, 0.30987564986830474, 0.8704706619231982, 0.7805040831524082, 0.4351505752513511, 0.7446212658133317, 0.38341275103507483, 0.7323600765362799, 0.9227973693053949, 0.4570505930068873, 0.6977663296939705, 0.548508347821266, 0.3164201955237622, 0.9415237298088934, 0.9212930010215931, 0.9777939545550448, 0.9172807931842444, 0.4120431757584834, 0.761654589463077, 0.6221336160424108, 0.499878945079447, 0.4078564545221146, 0.3397590110290239, 0.4871400302279183, 0.37931217028653963, 0.7530095686412515, 0.4897090235491954, 0.6437792563341148, 0.049036472344534135, 0.9037324497088037, 0.1865100636128822, 0.6340334052211057, 0.5452710161328355, 0.6998288400354608, 0.3260828038624299, 0.28886748144721525, 0.016712885213060594, 0.9154909915060521, 0.6087261660678079, 0.7747245360208787, 0.8961646537497714, 0.00931676836089043, 0.33712554420428076, 0.9231056330354299, 0.7219860268262156, 0.40349826535667466, 0.24382900867389654, 0.21863237599998403, 0.8895820169980355, 0.2511798086205526, 0.351352620365007, 0.9919104891860144, 0.057642865875575135, 0.44395453088461295, 0.6294022894509516, 0.32238111809142356, 0.8013472091800091, 0.9174128576104122, 0.5417467030750591, 0.9458352776245379, 0.33632584058441567, 0.4104577494092599, 0.4978167811777052, 0.990968650361057, 0.04996679773745919, 0.12356179215754967, 0.500826251260805, 0.2609223492305048, 0.3158953368562616, 0.7357864878760624, 0.9115551275542213, 0.06463138335369707]
+Best Accuracy: 97.6470588235294 %
+1.0
