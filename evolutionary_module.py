@@ -55,7 +55,7 @@ def evaluation(x, y, val_x, val_y, compare, population):
             fitnesses[j] = -1
         else:
             val = network.validate(val_x, val_y, compare)
-            fitnesses[j] = (val**int(network.node_count/2+10))/len(network.connections)
+            fitnesses[j] = val/(traits) # (val**int(network.node_count/2+10))/len(network.connections)
     # Return the respective fitnesses
     return fitnesses
 
@@ -177,7 +177,7 @@ def evolution(x, y, val_x, val_y, compare, population_size, node_count, generati
         competition(fitnesses, population, new_fitnesses, new_networks)
 
         # Save the best network
-        print("Generation #", i, " Max Fitness:", fitnesses.max())
+        print("Generation #", i, " Max Fitness:", best_fitness)
         if fitnesses.max() > best_fitness:
             print("New Best Fitness")
             best_fitness = fitnesses.max()

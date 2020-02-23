@@ -1,5 +1,5 @@
 import matplotlib.pyplot as plt
-import homebrew.network as net
+import network as net
 import networkx as nx
 import numpy as np
 import traceback
