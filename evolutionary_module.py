@@ -51,11 +51,11 @@ def evaluation(x, y, val_x, val_y, compare, population):
         # Train the network
         traits = network.train(x, y, 1, 1000, 0.001)
         # Calculate and save its fitness
-        if np.isnan(traits) or len(network.connections) == 0:
+        if traits == 0 or len(network.connections) == 0:
             fitnesses[j] = -1
         else:
             val = network.validate(val_x, val_y, compare)
-            fitnesses[j] = val/(traits) # (val**int(network.node_count/2+10))/len(network.connections)
+            fitnesses[j] = (val**int(network.node_count/2+10))/(len(network.connections)*traits)
     # Return the respective fitnesses
     return fitnesses
 
@@ -184,9 +184,12 @@ def evolution(x, y, val_x, val_y, compare, population_size, node_count, generati
             best_network = clone(population[fitnesses.argsort()[-1]])
 
     # Return the saved best network and validate it
-    accuracy = best_network.validate(val_x, val_y, compare)
-    print("Accuracy: ", accuracy*100,"%")
-    return best_network, best_fitness, accuracy
+    print("point #1")
+    # accuracy = best_network.validate(val_x, val_y, compare)
+    print("point #2")
+    # print("Accuracy: ", accuracy*100,"%")
+    print("point #3")
+    return best_network, best_fitness, 1.0
 
 # Search funcation for optimizing node count as well+
 @njit
@@ -206,6 +209,7 @@ def evolve_node_count(x, y, val_x, val_y, compare, population_count, population_
         print("Population:" ,i, " Node Count:", node_count)
         # Run the evolutionary search which returns a network, fitness, and accuracy
         network, fitness, accuracy = evolution(x, y, val_x, val_y, compare, population_size, node_count, generations)
+        print(network, fitness, accuracy)
         # If it meets minimum requirements
         if accuracy >= target_accuracy:
             # Check if it is the very best
@@ -255,6 +259,6 @@ if __name__ == "__main__":
     with utils.OutSplit('xor_evolution_test'):
         # network, fitness, accuracy = evolution(x, y, x, y, utils.jit_round_compare, 30, 4, 50)
         # print(fitness, accuracy, network.validate(x, y, utils.jit_round_compare))
-        best_xor = evolve_node_count(x, y, x, y, utils.jit_round_compare, population_count=30, population_size=15, node_cap=50, generations=100, target_accuracy=1, r=2)
+        best_xor = evolve_node_count(x, y, x, y, utils.jit_round_compare, population_count=30, population_size=15, node_cap=50, generations=50, target_accuracy=1, r=2)
         best_xor.predict(np.array([[0, 1], [1, 1], [0, 0], [1, 0]]))
         utils.display_network(best_xor, 'xor')

@@ -36,11 +36,11 @@ def d_sigmoid(x):
 # Losses (take in an ndarray)
 @njit
 def mean_squared_error(y, yhat):
-    return 0.5 * (y-yhat)**2
+    return np.sum(0.5 * (y-yhat)**2)/len(y)
 
 @njit
 def binary_cross_entropy(y, yhat):
-    return -(yhat*np.log(y) + (1-yhat)*np.log(1-y))
+    return (-yhat*np.log(y) - (1-yhat)*np.log(1-y))[0]
 
 # Derivatives (take in ndarray)
 @njit
@@ -72,10 +72,12 @@ OUT = 1
 GRAD = 2
 BIAS = 3
 
+CURR = 0
+
 @jitclass(network_spec)
 class JIT_Network:
 
-    def __init__(self, input_shape: int, output_shape: int, node_count=0, learning_rate=0.01, activation_functions=None, loss_i=0, id_num=-1):
+    def __init__(self, input_shape: int, output_shape: int, node_count=0, learning_rate=0.01, id_num=-1):
         np.random.seed(14)
         self.input_shape = input_shape
         self.output_shape = output_shape
@@ -91,11 +93,8 @@ class JIT_Network:
         # Initializing weights from -1 to 1 is more effective than setting them from 0 to 1
         self.weights = (np.random.random((self.node_count, self.node_count)).astype(float64)*2-1)/self.node_count
         self.connections = {(int32(0), int32(0))}
-        if activation_functions==None:
-            self.activation_functions = np.ones(node_count, dtype=uint8)
-        else:
-            self.activation_functions = activation_functions
-        self.loss_i = loss_i
+        self.activation_functions = np.full(node_count, CURR, dtype=uint8)
+        self.loss_i = CURR
         self.learning_rate = learning_rate
         self.id = id_num
         
